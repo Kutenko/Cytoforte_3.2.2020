@@ -1,0 +1,377 @@
+// Fonts
+$ff_main: "Futura New";
+$fw_bold: 700;
+$fw_book: 400;
+// Color
+$dark_black: #000000;
+$rose_white: #fff9f8;
+$white: #ffffff;
+$cinnabar: #e23c3c;
+// Gardient
+$gr_rose_white: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
+
+// Title
+h1{
+    font-family: $ff_main;
+    font-weight: $fw_bold;
+    font-size: 72px;
+    line-height: 74px;
+    color: $dark_black;    
+}
+h2{
+    font-family: $ff_main;
+    font-weight: $fw_bold;
+    font-size: 50px;
+    line-height: 52px;
+    color: $dark_black;
+
+}
+h3{
+    font-family: $ff_main;
+    font-weight: $fw_bold;
+    font-size: 28px;
+    line-height: 33,6px;
+    color: $dark_black;
+}
+p{
+    font-family: $ff_main;
+    font-weight: $fw_book;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: $dark_black;
+}
+
+// Main style
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;    
+}
+.container{
+    width: 100%;
+    max-width: 1276px;
+    margin: 0 auto;
+}
+
+.button{
+    max-width: 282px;
+    padding: 16px 34px 16px;
+    text-align: right;
+    clear: both;
+    color: $dark_black;
+    border:2px solid $dark_black;
+    border-radius: 25px;
+    overflow: hidden;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    span{
+        position: relative;
+        font-family: $ff_main;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px;
+        transition: .4s ease-in-out;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -40px;
+            width: 20px;
+            height: 20px;
+            border-radius: 150px;
+            background: $cinnabar;
+            transition: .4s ease-in-out;
+            z-index: -1;
+        }
+    }
+    &:hover{
+        border: 2px solid $cinnabar;
+        padding-right: 58px;
+        span{
+            color: $white;
+            &::before{
+                content: '';
+                top: -125px;
+                left: -60px;
+                width: 290px;
+                height: 290px;
+            }
+        }       
+    }
+}
+
+.quote{
+    max-width: 885px;
+    background: $rose_white;
+    padding: 95px 105px;
+    margin: 0 auto;
+    &::after{
+        content: '';
+        position: absolute;
+        top: -25px;
+        right: 105px;
+        background-image: url(../images/quote.svg);
+        width: 100px;
+        height: 75px;
+    }
+    p{
+        font-family: $ff_main;
+        font-size: 32px;
+        font-weight: $fw_book;
+        line-height: 38.4px;
+    }
+}
+.sc_decor{
+    position: relative;
+    top: -30px;
+    height: 1px;
+    width: 100%;
+        &::after{
+            content: ' ';
+            display: block;
+            margin: 0 auto;
+            bottom: -30px;
+            width: 62px;
+            height: 52px;
+            margin: 0 auto;
+            background-image: url(../images/section_decor.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            z-index: 9999;
+        }
+    }
+.row{
+    float: left;
+    clear: both;
+    width: 100%;
+}
+// sc-1
+.sc-1{
+    position: relative;
+    min-height: 890px;
+    overflow: hidden;
+    &::before{
+        content: '';
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gr_rose_white;
+        opacity: .9;
+    }
+    .container{
+        position: relative;
+    }
+    .cytoforte{
+        font-family: $ff_main;
+        color: $dark_black;
+        opacity: 0.3;
+        font-size: 330px;
+        font-weight: $fw_bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+        height: 417px;
+        z-index: -1;
+        position: absolute;
+        top: 250px;
+        left: 0;
+    }
+
+    .logo{
+        width: 157.52px;
+        height: 35px;
+        float: left;
+        margin: 90px 0 0 0;
+        z-index: 1;
+        position: relative;
+    }
+    .content-block{
+        padding: 123px 0 250px;
+        width: 740px;
+        overflow: hidden;
+        clear: both;
+        z-index: 1;
+        position: relative;
+        .title{
+            margin: 0 0 60px;
+        }
+        .subtitle{
+            margin: 0 0 60px;
+            overflow: hidden;
+            .left{
+                width: 315px;
+                float: left;
+                margin: 0 60px 0 0;
+                color: $cinnabar;
+                font-family: $ff_main;
+                font-size: 58px;
+                font-weight: $fw_bold;
+                line-height: 58px;
+            }
+            .right{
+                float: right;
+                width: 360px;
+            }
+        }
+    }
+    .product-image{
+        position: absolute;
+        right: 0;
+        top: 200px;
+        width: 491px;
+        height: 491px;
+        border-radius: 100%;
+        background: $cinnabar;
+        z-index: 2;
+        &::before{
+            content:' ';
+            display: block;
+            width: 2px;
+            height: 230px;
+            background: $cinnabar;
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            z-index: 0;
+        }
+        &::after{
+            content: '';
+            display: block;
+            width: 2px;
+            height: 230px;
+            background: $cinnabar;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            z-index: 0;
+        }        
+        img{
+            width: 618px;
+            height: auto;
+            position: absolute;
+            top: -15px;
+            right: -50px;
+        }
+        .lives{
+            width: 890px;
+            height: 900px;
+            position: absolute;
+            top: -225px;
+            right: -122px;
+            background: url(../images/leaves.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: -1;
+        }
+    }
+}
+.sc-2{
+    padding: 157px 0 180px 0;
+    .image__r-1{
+        max-width: 495px;
+        height: 600px;
+        float: left;
+        margin-right: 90px;
+        z-index: 0;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .text-block__r-1{
+        max-width: 690px;
+        float: left;
+        margin:  186px 0 0 0;
+        h2{
+            margin: 0 0 15px;
+        }
+        P{
+            max-width: 365px;
+        }
+    }
+    .quote{
+        position: relative;
+        top: -90px;
+        z-index: 1;
+    }
+    .image__r-2{
+        position: relative;
+        top: -180px;
+        max-width: 495px;
+        height: 600px;
+        float: right;
+        margin-left: 90px;
+        z-index: -1;
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+    .text-block__r-2{
+        max-width: 690px;
+        float: left;
+        padding:  0 0 0 196px;
+        ul{
+            list-style: none;
+            li{
+                position: relative;
+                padding: 0 0 60px;
+                &.icon-1{
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        left: -196px;
+                        top: 0;
+                        width: 110px;
+                        height: 110px;
+                        background: url(../images/icon_fire.svg);
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        background-size: contain;
+                    }
+                }
+                &.icon-2{
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        left: -196px;
+                        top: 0;
+                        width: 110px;
+                        height: 110px;
+                        background: url(../images/icon_bladder.svg);
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        background-size: contain;
+                    }
+                }
+                &.icon-3{
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        display: block;
+                        left: -196px;
+                        top: 0;
+                        width: 110px;
+                        height: 110px;
+                        background: url(../images/icon_bacteria.svg);
+                        background-repeat: no-repeat;
+                        background-position: center left;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+        h2{
+            margin: 0 0 15px;
+        }
+    }    
+}

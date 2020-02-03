@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="62px" height="53px" viewBox="0 0 62 53" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <desc>Created with Lunacy</desc>
+  <defs>
+    <linearGradient x1="0" y1="0" x2="1" y2="1" id="gradient_1">
+      <stop offset="0" stop-color="#E23C3C" />
+      <stop offset="1" stop-color="#C73838" />
+    </linearGradient>
+  </defs>
+  <g id="section_decor-Symbol-instance">
+    <g id="section_decor" transform="translate(0.5 0.4999499)">
+      <path d="M0 21.5152C0 9.63268 9.63364 0 21.5173 0C25.9563 0 30.0813 1.34403 33.5076 3.64731C33.5079 3.64749 33.5081 3.64767 33.5084 3.64784C39.2542 7.5108 43.0347 14.0716 43.0347 21.5152C43.0347 33.3977 33.401 43.0304 21.5173 43.0304C9.63364 43.0304 0 33.3977 0 21.5152Z" transform="translate(8.96582 8.963945)" id="Rectangle-3" fill="url(#gradient_1)" stroke="none" />
+      <path d="M0 30.4798C0 13.6463 13.6477 0 30.4829 0C47.3182 0 60.9658 13.6463 60.9658 30.4798" id="Rectangle-3-Copy" fill="none" stroke="#000000" stroke-width="1" />
+    </g>
+  </g>
+</svg>

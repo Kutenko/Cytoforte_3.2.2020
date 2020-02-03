@@ -1,0 +1,313 @@
+h1 {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 74px;
+  color: #000000; }
+
+h2 {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 52px;
+  color: #000000; }
+
+h3 {
+  font-family: "Futura New";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 33,6px;
+  color: #000000; }
+
+p {
+  font-family: "Futura New";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #000000; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; }
+
+.container {
+  width: 100%;
+  max-width: 1276px;
+  margin: 0 auto; }
+
+.button {
+  max-width: 282px;
+  padding: 16px 34px 16px;
+  text-align: right;
+  clear: both;
+  color: #000000;
+  border: 2px solid #000000;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: .4s ease-in-out;
+  cursor: pointer; }
+  .button span {
+    position: relative;
+    font-family: "Futura New";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    transition: .4s ease-in-out; }
+    .button span::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -40px;
+      width: 20px;
+      height: 20px;
+      border-radius: 150px;
+      background: #e23c3c;
+      transition: .4s ease-in-out;
+      z-index: -1; }
+  .button:hover {
+    border: 2px solid #e23c3c;
+    padding-right: 58px; }
+    .button:hover span {
+      color: #ffffff; }
+      .button:hover span::before {
+        content: '';
+        top: -125px;
+        left: -60px;
+        width: 290px;
+        height: 290px; }
+
+.quote {
+  max-width: 885px;
+  background: #fff9f8;
+  padding: 95px 105px;
+  margin: 0 auto; }
+  .quote::after {
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 105px;
+    background-image: url(../images/quote.svg);
+    width: 100px;
+    height: 75px; }
+  .quote p {
+    font-family: "Futura New";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.4px; }
+
+.sc_decor {
+  position: relative;
+  top: -30px;
+  height: 1px;
+  width: 100%; }
+  .sc_decor::after {
+    content: ' ';
+    display: block;
+    margin: 0 auto;
+    bottom: -30px;
+    width: 62px;
+    height: 52px;
+    margin: 0 auto;
+    background-image: url(../images/section_decor.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 9999; }
+
+.row {
+  float: left;
+  clear: both;
+  width: 100%; }
+
+.sc-1 {
+  position: relative;
+  min-height: 890px;
+  overflow: hidden; }
+  .sc-1::before {
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
+    opacity: .9; }
+  .sc-1 .container {
+    position: relative; }
+  .sc-1 .cytoforte {
+    font-family: "Futura New";
+    color: #000000;
+    opacity: 0.3;
+    font-size: 330px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    height: 417px;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: 0; }
+  .sc-1 .logo {
+    width: 157.52px;
+    height: 35px;
+    float: left;
+    margin: 90px 0 0 0;
+    z-index: 1;
+    position: relative; }
+  .sc-1 .content-block {
+    padding: 123px 0 250px;
+    width: 740px;
+    overflow: hidden;
+    clear: both;
+    z-index: 1;
+    position: relative; }
+    .sc-1 .content-block .title {
+      margin: 0 0 60px; }
+    .sc-1 .content-block .subtitle {
+      margin: 0 0 60px;
+      overflow: hidden; }
+      .sc-1 .content-block .subtitle .left {
+        width: 315px;
+        float: left;
+        margin: 0 60px 0 0;
+        color: #e23c3c;
+        font-family: "Futura New";
+        font-size: 58px;
+        font-weight: 700;
+        line-height: 58px; }
+      .sc-1 .content-block .subtitle .right {
+        float: right;
+        width: 360px; }
+  .sc-1 .product-image {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 491px;
+    height: 491px;
+    border-radius: 100%;
+    background: #e23c3c;
+    z-index: 2; }
+    .sc-1 .product-image::before {
+      content: ' ';
+      display: block;
+      width: 2px;
+      height: 230px;
+      background: #e23c3c;
+      position: absolute;
+      left: 50%;
+      bottom: 100%;
+      z-index: 0; }
+    .sc-1 .product-image::after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 230px;
+      background: #e23c3c;
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      z-index: 0; }
+    .sc-1 .product-image img {
+      width: 618px;
+      height: auto;
+      position: absolute;
+      top: -15px;
+      right: -50px; }
+    .sc-1 .product-image .lives {
+      width: 890px;
+      height: 900px;
+      position: absolute;
+      top: -225px;
+      right: -122px;
+      background: url(../images/leaves.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: -1; }
+
+.sc-2 {
+  padding: 157px 0 180px 0; }
+  .sc-2 .image__r-1 {
+    max-width: 495px;
+    height: 600px;
+    float: left;
+    margin-right: 90px;
+    z-index: 0; }
+    .sc-2 .image__r-1 img {
+      height: 100%;
+      width: auto; }
+  .sc-2 .text-block__r-1 {
+    max-width: 690px;
+    float: left;
+    margin: 186px 0 0 0; }
+    .sc-2 .text-block__r-1 h2 {
+      margin: 0 0 15px; }
+    .sc-2 .text-block__r-1 P {
+      max-width: 365px; }
+  .sc-2 .quote {
+    position: relative;
+    top: -90px;
+    z-index: 1; }
+  .sc-2 .image__r-2 {
+    position: relative;
+    top: -180px;
+    max-width: 495px;
+    height: 600px;
+    float: right;
+    margin-left: 90px;
+    z-index: -1; }
+    .sc-2 .image__r-2 img {
+      height: 100%;
+      width: auto; }
+  .sc-2 .text-block__r-2 {
+    max-width: 690px;
+    float: left;
+    padding: 0 0 0 196px; }
+    .sc-2 .text-block__r-2 ul {
+      list-style: none; }
+      .sc-2 .text-block__r-2 ul li {
+        position: relative;
+        padding: 0 0 60px; }
+        .sc-2 .text-block__r-2 ul li.icon-1::before {
+          content: '';
+          position: absolute;
+          display: block;
+          left: -196px;
+          top: 0;
+          width: 110px;
+          height: 110px;
+          background: url(../images/icon_fire.svg);
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: contain; }
+        .sc-2 .text-block__r-2 ul li.icon-2::before {
+          content: '';
+          position: absolute;
+          display: block;
+          left: -196px;
+          top: 0;
+          width: 110px;
+          height: 110px;
+          background: url(../images/icon_bladder.svg);
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: contain; }
+        .sc-2 .text-block__r-2 ul li.icon-3::before {
+          content: '';
+          position: absolute;
+          display: block;
+          left: -196px;
+          top: 0;
+          width: 110px;
+          height: 110px;
+          background: url(../images/icon_bacteria.svg);
+          background-repeat: no-repeat;
+          background-position: center left;
+          background-size: contain; }
+    .sc-2 .text-block__r-2 h2 {
+      margin: 0 0 15px; }
