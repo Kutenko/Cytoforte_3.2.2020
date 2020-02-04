@@ -1,25 +1,52 @@
 // Fonts
-$ff_main: "Futura New";
+$ff_futura: "Futura New";
+
 $fw_bold: 700;
 $fw_book: 400;
+
+
+
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
+        url('hinted-FuturaNewBold-Reg.woff2') format('woff2'),
+        url('hinted-FuturaNewBold-Reg.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Obl'), local('FuturaNewBold-Obl'),
+        url('hinted-FuturaNewBold-Obl.woff2') format('woff2'),
+        url('hinted-FuturaNewBold-Obl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+
+
 // Color
 $dark_black: #000000;
 $rose_white: #fff9f8;
 $white: #ffffff;
+$wild_sand: #f6f6f6;
 $cinnabar: #e23c3c;
 // Gardient
 $gr_rose_white: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
 
 // Title
 h1{
-    font-family: $ff_main;
+    font-family: $ff_futura;
     font-weight: $fw_bold;
     font-size: 72px;
     line-height: 74px;
     color: $dark_black;    
 }
 h2{
-    font-family: $ff_main;
+    font-family: $ff_futura;
     font-weight: $fw_bold;
     font-size: 50px;
     line-height: 52px;
@@ -27,21 +54,29 @@ h2{
 
 }
 h3{
-    font-family: $ff_main;
+    font-family: $ff_futura;
     font-weight: $fw_bold;
     font-size: 28px;
     line-height: 33,6px;
     color: $dark_black;
 }
 p{
-    font-family: $ff_main;
+    font-family: $ff_futura;
     font-weight: $fw_book;
     font-size: 18px;
     line-height: 21.6px;
     color: $dark_black;
 }
+span{
+    font-family: $ff_futura;
+}
 
 // Main style
+
+body{
+    font-family: $ff_futura;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -69,9 +104,8 @@ p{
     cursor: pointer;
     span{
         position: relative;
-        font-family: $ff_main;
         font-size: 18px;
-        font-weight: 700;
+        font-weight: $fw_bold;
         line-height: 21.6px;
         transition: .4s ease-in-out;
         &::before{
@@ -118,7 +152,6 @@ p{
         height: 75px;
     }
     p{
-        font-family: $ff_main;
         font-size: 32px;
         font-weight: $fw_book;
         line-height: 38.4px;
@@ -168,19 +201,21 @@ p{
         position: relative;
     }
     .cytoforte{
-        font-family: $ff_main;
         color: $dark_black;
         opacity: 0.3;
         font-size: 330px;
         font-weight: $fw_bold;
         text-align: center;
         text-transform: uppercase;
-        width: 100%;
+        width: 3000px;
         height: 417px;
         z-index: -1;
         position: absolute;
         top: 250px;
-        left: 0;
+        left: -1600px;
+        span{
+            margin: 0 150px 0 0;
+        }
     }
 
     .logo{
@@ -209,7 +244,6 @@ p{
                 float: left;
                 margin: 0 60px 0 0;
                 color: $cinnabar;
-                font-family: $ff_main;
                 font-size: 58px;
                 font-weight: $fw_bold;
                 line-height: 58px;
@@ -252,28 +286,29 @@ p{
             z-index: 0;
         }        
         img{
-            width: 618px;
+            max-width: 618px;
             height: auto;
             position: absolute;
             top: -15px;
             right: -50px;
         }
-        .lives{
+        .leaf{
             width: 890px;
             height: 900px;
             position: absolute;
             top: -225px;
             right: -122px;
-            background: url(../images/leaves.png);
+            background: url(../images/leaf.png);
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
             z-index: -1;
-        }
+        }        
     }
 }
 .sc-2{
-    padding: 157px 0 180px 0;
+    padding: 157px 0 60px 0;
+    overflow: hidden;
     .image__r-1{
         max-width: 495px;
         height: 600px;
@@ -374,4 +409,187 @@ p{
             margin: 0 0 15px;
         }
     }    
+}
+.sc-3{
+    margin: 0 ;
+    padding: 90px 0;
+    // min-height: 890px;
+    overflow: hidden;
+    position: relative;
+    &::before{
+        content: '';
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gr_rose_white;
+        opacity: .9;
+    }    
+    .container{
+        position: relative;
+    }
+    .cytoforte{
+        color: $dark_black;
+        opacity: 0.3;
+        font-size: 330px;
+        font-weight: $fw_bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 3000px;
+        height: 417px;
+        z-index: -1;
+        position: absolute;
+        top: 250px;
+        left: -1600px;
+        span{
+            margin: 0 150px 0 0;
+        }
+    }    
+    .title{
+        max-width: 690px;
+        margin: 0 auto 60px;
+        text-align: center;
+    }
+    .product-image-container{
+        position: relative;
+        width: 490px;
+        height: 490px;
+        float: left;        
+        margin: 0 0 0 120px;
+        .product-image{
+            position: relative;
+            width: 490px;
+            height: 490px;
+            float: left;
+            border-radius: 100%;
+            background: $cinnabar;
+            z-index: 1;      
+            img{
+                max-width: 618px;
+                height: auto;
+                position: absolute;
+                top: -15px;
+                right: -50px;
+            }
+        }
+        .leaf_back{
+            width: 853px;
+            height: 817px;
+            position: absolute;
+            top: -200px;
+            left: -170px;
+            background: url(../images/leaf_back.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 0;
+        }
+        .leaf_front{
+            width: 703px;
+            height: 564px;
+            position: absolute;
+            top: -50px;
+            left: -110px;
+            background: url(../images/leaf_front.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 0;
+        }
+    }
+    .product-price{
+        float: right;
+        text-align: center;
+        .card{
+            position: relative;
+            display: inline-block;
+            width: 494px;
+            height: 504px;
+            border-radius: 15px;
+            padding: 90px;
+            background: $wild_sand;
+            z-index: 0;
+            .title{
+                h3{
+                    font-size: 32px;
+                    font-weight: 100;
+                    line-height: 41.6px;
+                    span{
+                        border-radius: 5px;
+                        background: $cinnabar;
+                        color: $white;
+                        line-height: 0;
+                        padding: 2px 20px ;
+                    }
+                }
+            }
+            .price{
+                margin: 30px 0 0 0;
+                .old{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    span{
+                        text-decoration: line-through;
+                        margin: 0 0 0 20px;
+                    }
+                }
+                .new{
+                    font-size: 64px;
+                    font-weight: $fw_bold;
+                    line-height: 81px;
+                    color: $dark_black;
+                }
+            }
+            .button{
+                margin: 60px auto;
+            }
+        }
+    }
+}
+.sc-4{
+    padding: 90px 0 0 0;
+    .title{
+        text-align: center;
+        max-width: 685px;
+        margin: 0 auto;
+    }
+    .subtitle{
+        width: 365px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .container-item{
+        max-width: 1086px;
+        margin: 0 auto;
+    }
+    .item{
+        width: 25%;
+        min-height: 401px;
+        float: left;
+        margin: 45px 45px;
+        border-radius: 25px;
+        border: dashed 1px #808080;
+        .image{
+            width: 205px;
+            height: 205px;
+            margin: 30px auto 0;
+            padding: 10px;
+            background: $wild_sand;
+            border: 2px solid $cinnabar;
+            border-radius: 100%;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: auto;
+                border-radius: 100%;
+            }
+        }
+        .text{
+            padding: 30px 10px;
+            text-align: center;
+        }
+    }
 }

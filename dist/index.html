@@ -5,11 +5,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 		<title>Document</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
+		<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
+		<script src="js/app.min.js"></script>
 	</head>
 	<body>
 		<section class="sc-1">
-			<div class="cytoforte">cytforte</div>
+			<div class="cytoforte" uk-parallax="x: 0, 500"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
 			<div class="container">
 				<div class="row">
 					<div class="logo"><img src="images/logo.svg" alt="" srcset="images/logo.svg"/></div>
@@ -29,7 +32,7 @@
 					</div>
 					<div class="product-image"><img src="images/product.png" alt="" srcset="images/product.png"/>
 						<div class="ellipse"></div>
-						<div class="lives"></div>
+						<div class="leaf" uk-parallax="x: 0, -200; y: 0, -200"></div>
 					</div>
 				</div>
 			</div>
@@ -38,8 +41,8 @@
 		<section class="sc-2">
 			<div class="container">
 				<div class="row">
-					<div class="image__r-1"><img src="images/image_woman.jpeg" alt=""/></div>
-					<div class="text-block__r-1">
+					<div class="image__r-1"><img src="images/image_woman.jpeg" alt="" uk-parallax="y: 100, -100"/></div>
+					<div class="text-block__r-1" uk-parallax="y: 50, -50">
 						<h2>Снова завязывает <br> в узел ? </h2>
 						<p>По статистике ВОЗ каждая четвертая женщина переносит заболевания мочевыводящих путей минимум 6 раз за жизнь, и 65% из них в хронической форме.</p>
 					</div>
@@ -50,7 +53,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="text-block__r-2">
+					<div class="text-block__r-2" uk-parallax="y: 50, -50">
 						<ul>
 							<li class="icon-1">
 								<h3>Последствия после секса</h3>
@@ -66,7 +69,97 @@
 							</li>
 						</ul>
 					</div>
-					<div class="image__r-2"><img src="images/image_sex.jpeg" alt="" srcset=""/></div>
+					<div class="image__r-2"><img src="images/image_sex.jpeg" alt="" srcset="" uk-parallax="y: 100, -100"/></div>
+				</div>
+			</div>
+		</section>
+		<section class="sc-3">
+			<div class="cytoforte" uk-parallax="x: 0, 500"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h2>Удовольствие без последствий</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="product-image-container">
+						<div class="product-image"><img src="images/product.png" alt="" srcset="images/product.png"/></div>
+						<div class="leaf_back" uk-parallax="scale: 0, 1, 1, 1, 1"></div>
+						<div class="leaf_front" uk-parallax="scale: 0, 1, 1, 1"></div>
+					</div>
+					<div class="product-price">
+						<div class="card">
+							<div class="title">
+								<h3>Успей купить Cyto Forte<br/><span>со скидкой 50% </span></h3>
+							</div>
+							<div class="price">
+								<div class="old">
+									 Старая цена<span>3790 руб. </span></div>
+								<div class="new">1890 руб.</div>
+							</div>
+							<div class="button"><span>ЗАКАЗАТЬ СЕЙЧАС  </span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="sc-4">
+			<div class="container">
+				<div class="row">
+					<div class="title">
+						<h2>На страже женского здоровья</h2>
+					</div>
+					<div class="subtitle">
+						<p>Не омрачайте жизнь неприятностями. Всего несколько простых правил помогут избежать заболевания: </p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="container-item">
+						<div class="item">  
+							<div class="image"><img src="images/item_img_1.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>Примите 2 капсулы Cyto Forte перед половым актом или сразу после него</p>
+							</div>
+						</div>
+						<!--**//**//-->
+						<div class="item">  
+							<div class="image"><img src="images/item_img_2.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>Опорожняйте мочевой пузырь сразу после секса            </p>
+							</div>
+						</div>
+						<!--**//**//-->
+						<div class="item">  
+							<div class="image"><img src="images/item_img_3.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>Соблюдайте тщательную гигиену во время полового контакта</p>
+							</div>
+						</div>
+						<!--**//**//-->
+						<div class="item">  
+							<div class="image"><img src="images/item_img_4.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>
+									Меняйте презерватив если совмещаете несколько видов проникновений 
+									( оральное, вагинальное, анальное )
+								</p>
+							</div>
+						</div>
+						<!--**//**//-->
+						<div class="item">  
+							<div class="image"><img src="images/item_img_5.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>Используйте дополнительную смазку при чрезмерной сухости влагалища</p>
+							</div>
+						</div>
+						<!--**//**//-->
+						<div class="item">  
+							<div class="image"><img src="images/item_img_6.png" alt="" srcset=""/></div>
+							<div class="text">
+								<p>Контролируйте силу и резкость интимных проникновений</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>

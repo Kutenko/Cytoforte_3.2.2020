@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'Futura New';
+  src: local("Futura New Bold Reg"), local("FuturaNewBold-Reg"), url("hinted-FuturaNewBold-Reg.woff2") format("woff2"), url("hinted-FuturaNewBold-Reg.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Futura New';
+  src: local("Futura New Bold Obl"), local("FuturaNewBold-Obl"), url("hinted-FuturaNewBold-Obl.woff2") format("woff2"), url("hinted-FuturaNewBold-Obl.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
 h1 {
   font-family: "Futura New";
   font-weight: 700;
@@ -26,6 +38,12 @@ p {
   line-height: 21.6px;
   color: #000000; }
 
+span {
+  font-family: "Futura New"; }
+
+body {
+  font-family: "Futura New"; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -52,7 +70,6 @@ p {
   cursor: pointer; }
   .button span {
     position: relative;
-    font-family: "Futura New";
     font-size: 18px;
     font-weight: 700;
     line-height: 21.6px;
@@ -94,7 +111,6 @@ p {
     width: 100px;
     height: 75px; }
   .quote p {
-    font-family: "Futura New";
     font-size: 32px;
     font-weight: 400;
     line-height: 38.4px; }
@@ -139,19 +155,20 @@ p {
   .sc-1 .container {
     position: relative; }
   .sc-1 .cytoforte {
-    font-family: "Futura New";
     color: #000000;
     opacity: 0.3;
     font-size: 330px;
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
-    width: 100%;
+    width: 3000px;
     height: 417px;
     z-index: -1;
     position: absolute;
     top: 250px;
-    left: 0; }
+    left: -1600px; }
+    .sc-1 .cytoforte span {
+      margin: 0 150px 0 0; }
   .sc-1 .logo {
     width: 157.52px;
     height: 35px;
@@ -176,7 +193,6 @@ p {
         float: left;
         margin: 0 60px 0 0;
         color: #e23c3c;
-        font-family: "Futura New";
         font-size: 58px;
         font-weight: 700;
         line-height: 58px; }
@@ -213,25 +229,26 @@ p {
       top: 100%;
       z-index: 0; }
     .sc-1 .product-image img {
-      width: 618px;
+      max-width: 618px;
       height: auto;
       position: absolute;
       top: -15px;
       right: -50px; }
-    .sc-1 .product-image .lives {
+    .sc-1 .product-image .leaf {
       width: 890px;
       height: 900px;
       position: absolute;
       top: -225px;
       right: -122px;
-      background: url(../images/leaves.png);
+      background: url(../images/leaf.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
       z-index: -1; }
 
 .sc-2 {
-  padding: 157px 0 180px 0; }
+  padding: 157px 0 60px 0;
+  overflow: hidden; }
   .sc-2 .image__r-1 {
     max-width: 495px;
     height: 600px;
@@ -311,3 +328,157 @@ p {
           background-size: contain; }
     .sc-2 .text-block__r-2 h2 {
       margin: 0 0 15px; }
+
+.sc-3 {
+  margin: 0;
+  padding: 90px 0;
+  overflow: hidden;
+  position: relative; }
+  .sc-3::before {
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
+    opacity: .9; }
+  .sc-3 .container {
+    position: relative; }
+  .sc-3 .cytoforte {
+    color: #000000;
+    opacity: 0.3;
+    font-size: 330px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width: 3000px;
+    height: 417px;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: -1600px; }
+    .sc-3 .cytoforte span {
+      margin: 0 150px 0 0; }
+  .sc-3 .title {
+    max-width: 690px;
+    margin: 0 auto 60px;
+    text-align: center; }
+  .sc-3 .product-image-container {
+    position: relative;
+    width: 490px;
+    height: 490px;
+    float: left;
+    margin: 0 0 0 120px; }
+    .sc-3 .product-image-container .product-image {
+      position: relative;
+      width: 490px;
+      height: 490px;
+      float: left;
+      border-radius: 100%;
+      background: #e23c3c;
+      z-index: 1; }
+      .sc-3 .product-image-container .product-image img {
+        max-width: 618px;
+        height: auto;
+        position: absolute;
+        top: -15px;
+        right: -50px; }
+    .sc-3 .product-image-container .leaf_back {
+      width: 853px;
+      height: 817px;
+      position: absolute;
+      top: -200px;
+      left: -170px;
+      background: url(../images/leaf_back.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 0; }
+    .sc-3 .product-image-container .leaf_front {
+      width: 703px;
+      height: 564px;
+      position: absolute;
+      top: -50px;
+      left: -110px;
+      background: url(../images/leaf_front.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 0; }
+  .sc-3 .product-price {
+    float: right;
+    text-align: center; }
+    .sc-3 .product-price .card {
+      position: relative;
+      display: inline-block;
+      width: 494px;
+      height: 504px;
+      border-radius: 15px;
+      padding: 90px;
+      background: #f6f6f6;
+      z-index: 0; }
+      .sc-3 .product-price .card .title h3 {
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 41.6px; }
+        .sc-3 .product-price .card .title h3 span {
+          border-radius: 5px;
+          background: #e23c3c;
+          color: #ffffff;
+          line-height: 0;
+          padding: 2px 20px; }
+      .sc-3 .product-price .card .price {
+        margin: 30px 0 0 0; }
+        .sc-3 .product-price .card .price .old {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 24px; }
+          .sc-3 .product-price .card .price .old span {
+            text-decoration: line-through;
+            margin: 0 0 0 20px; }
+        .sc-3 .product-price .card .price .new {
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 81px;
+          color: #000000; }
+      .sc-3 .product-price .card .button {
+        margin: 60px auto; }
+
+.sc-4 {
+  padding: 90px 0 0 0; }
+  .sc-4 .title {
+    text-align: center;
+    max-width: 685px;
+    margin: 0 auto; }
+  .sc-4 .subtitle {
+    width: 365px;
+    margin: 0 auto;
+    text-align: center; }
+  .sc-4 .container-item {
+    max-width: 1086px;
+    margin: 0 auto; }
+  .sc-4 .item {
+    width: 25%;
+    min-height: 401px;
+    float: left;
+    margin: 45px 45px;
+    border-radius: 25px;
+    border: dashed 1px #808080; }
+    .sc-4 .item .image {
+      width: 205px;
+      height: 205px;
+      margin: 30px auto 0;
+      padding: 10px;
+      background: #f6f6f6;
+      border: 2px solid #e23c3c;
+      border-radius: 100%;
+      overflow: hidden; }
+      .sc-4 .item .image img {
+        height: 100%;
+        width: auto;
+        border-radius: 100%; }
+    .sc-4 .item .text {
+      padding: 30px 10px;
+      text-align: center; }

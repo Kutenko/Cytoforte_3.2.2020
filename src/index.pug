@@ -6,11 +6,19 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
 
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css")
         link(rel="stylesheet", href="css/main.css")
+
+        script(src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js")
+        script(src="js/app.min.js")
 
     body
         section.sc-1
-            .cytoforte cytforte
+            .cytoforte(uk-parallax="x: 0, 500") 
+                span cytforte
+                span cytforte
+                span cytforte
+                span cytforte
             .container
                 .row
                     .logo
@@ -29,21 +37,22 @@ html(lang="en")
                     .product-image
                         img(src="images/product.png", alt="", srcset="images/product.png")
                         .ellipse
-                        .lives
+                        .leaf( uk-parallax="x: 0, -200; y: 0, -200")
+
         .sc_decor
         section.sc-2
             .container
                 .row
                     .image__r-1
-                        img(src="images/image_woman.jpeg", alt="")
-                    .text-block__r-1
+                        img(src="images/image_woman.jpeg", alt="", uk-parallax="y: 100, -100")
+                    .text-block__r-1(uk-parallax="y: 50, -50")
                         h2 Снова завязывает <br> в узел ? 
                         p По статистике ВОЗ каждая четвертая женщина переносит заболевания мочевыводящих путей минимум 6 раз за жизнь, и 65% из них в хронической форме.
                 .row
                     .quote
                         p Дискомфорт, жжение и режущая боль во время мочеиспускания, а также частые позывы и неприятный запах - все это симптомы цистита, который возникает по нескольким причинам:
                 .row
-                    .text-block__r-2
+                    .text-block__r-2(uk-parallax="y: 50, -50")
                         ul
                             li.icon-1
                                 h3 Последствия после секса
@@ -55,4 +64,86 @@ html(lang="en")
                                 h3 Последствия заболеваний
                                 p Опущение органов малого таза, нарушение вагинальной микрофлоры и гормональный дисбаланс приводит к атрофии слизистой оболочки мочевого пузыря, что также создает условия для размножения палочки - возбудителя цистита <b>E.coli</b>. 
                     .image__r-2
-                        img(src="images/image_sex.jpeg", alt="", srcset="")
+                        img(src="images/image_sex.jpeg", alt="", srcset="", uk-parallax="y: 100, -100")
+        section.sc-3
+            .cytoforte(uk-parallax="x: 0, 500") 
+                span cytforte
+                span cytforte
+                span cytforte
+                span cytforte
+            .container
+                .row
+                    .title
+                        h2 Удовольствие без последствий
+                .row
+                    .product-image-container
+                        .product-image
+                            img(src="images/product.png", alt="", srcset="images/product.png")                      
+                        .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1")
+                        .leaf_front( uk-parallax="scale: 0, 1, 1, 1")
+                    .product-price
+                        .card
+                            .title
+                                h3
+                                    |Успей купить Cyto Forte
+                                    br
+                                    span со скидкой 50% 
+                            .price
+                                .old 
+                                    |Старая цена
+                                    span 3790 руб. 
+                                .new 1890 руб.
+                            .button
+                                span ЗАКАЗАТЬ СЕЙЧАС  
+        section.sc-4
+            .container
+                .row
+                    .title
+                        h2 На страже женского здоровья
+                    .subtitle
+                        p. 
+                            Не омрачайте жизнь неприятностями. Всего несколько простых правил помогут избежать заболевания: 
+                .row
+                    .container-item
+                        .item   
+                            .image
+                                img(src="images/item_img_1.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Примите 2 капсулы Cyto Forte перед половым актом или сразу после него
+                        //**//**//
+                        .item   
+                            .image
+                                img(src="images/item_img_2.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Опорожняйте мочевой пузырь сразу после секса            
+                        //**//**//
+                        .item   
+                            .image
+                                img(src="images/item_img_3.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Соблюдайте тщательную гигиену во время полового контакта
+                        //**//**//
+                        .item   
+                            .image
+                                img(src="images/item_img_4.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Меняйте презерватив если совмещаете несколько видов проникновений 
+                                    ( оральное, вагинальное, анальное )
+                        //**//**//
+                        .item   
+                            .image
+                                img(src="images/item_img_5.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Используйте дополнительную смазку при чрезмерной сухости влагалища
+                        //**//**//
+                        .item   
+                            .image
+                                img(src="images/item_img_6.png", alt="", srcset="")
+                            .text
+                                p.
+                                    Контролируйте силу и резкость интимных проникновений
