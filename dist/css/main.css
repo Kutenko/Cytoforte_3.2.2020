@@ -379,13 +379,24 @@ body {
       float: left;
       border-radius: 100%;
       background: #e23c3c;
-      z-index: 1; }
+      z-index: 4; }
       .sc-3 .product-image-container .product-image img {
         max-width: 618px;
         height: auto;
         position: absolute;
         top: -15px;
         right: -50px; }
+    .sc-3 .product-image-container .berry {
+      width: 857px;
+      height: 677px;
+      position: absolute;
+      top: -200px;
+      left: -170px;
+      background: url(../images/berry_group.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 3; }
     .sc-3 .product-image-container .leaf_back {
       width: 853px;
       height: 817px;
@@ -396,7 +407,7 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      z-index: 0; }
+      z-index: 2; }
     .sc-3 .product-image-container .leaf_front {
       width: 703px;
       height: 564px;
@@ -407,7 +418,7 @@ body {
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      z-index: 0; }
+      z-index: 1; }
   .sc-3 .product-price {
     float: right;
     text-align: center; }
@@ -719,6 +730,217 @@ body {
         background-size: contain;
         left: 310px;
         top: 0px; }
+
+.sc-8 .title {
+  width: 663px;
+  float: right;
+  padding: 0 90px 0 0;
+  margin-top: 260px;
+  margin-bottom: 90px;
+  z-index: 1; }
+
+.sc-8 .slider {
+  position: relative;
+  z-index: 2;
+  top: -250px;
+  max-width: 910px;
+  margin: 0 auto;
+  overflow: hidden; }
+  .sc-8 .slider .uk-slideshow-items {
+    overflow: visible; }
+  .sc-8 .slider .slider-item {
+    overflow: visible;
+    min-height: 850px; }
+    .sc-8 .slider .slider-item .avatar {
+      width: 340px;
+      height: 350px;
+      overflow: hidden;
+      float: left; }
+      .sc-8 .slider .slider-item .avatar img {
+        width: auto;
+        height: 100%; }
+    .sc-8 .slider .slider-item .user-card {
+      position: relative;
+      width: 700px;
+      height: 430px;
+      padding: 90px;
+      top: -100px;
+      background: #F8F1F1;
+      border-radius: 25px;
+      float: right;
+      box-shadow: 2px 2px 15px rgba(100, 100, 100, 0.5); }
+      .sc-8 .slider .slider-item .user-card .star-rate span {
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background: url(../images/star.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0 5px 0 0; }
+
+.sc-9 {
+  padding: 90px 0; }
+  .sc-9 .title {
+    text-align: center;
+    margin: 0 auto 90px; }
+  .sc-9 .row {
+    text-align: center; }
+  .sc-9 .item {
+    width: 300px;
+    margin: 0 45px 0;
+    padding: 30px 0 0 0;
+    border: dashed 1px #c3c3c3;
+    display: inline-block;
+    border-radius: 25px; }
+    .sc-9 .item .image {
+      width: 240px;
+      height: 240px;
+      margin: 0 auto;
+      border-radius: 150%;
+      overflow: hidden; }
+      .sc-9 .item .image img {
+        width: 100%;
+        height: auto; }
+    .sc-9 .item .text {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21.6px;
+      text-align: center;
+      padding: 60px 45px 30px; }
+
+.sc-10 {
+  margin: 0;
+  padding: 90px 0;
+  overflow: hidden;
+  position: relative;
+  clear: both; }
+  .sc-10::before {
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
+    opacity: .9; }
+  .sc-10 .cytoforte {
+    color: #000000;
+    opacity: 0.3;
+    font-size: 330px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width: 3000px;
+    height: 417px;
+    z-index: -1;
+    position: absolute;
+    top: 250px;
+    left: -1600px; }
+    .sc-10 .cytoforte span {
+      margin: 0 150px 0 0; }
+  .sc-10 .title {
+    text-align: center;
+    margin: 0 0 90px 0; }
+  .sc-10 .product-image-container {
+    position: relative;
+    width: 490px;
+    height: 490px;
+    float: left;
+    margin: 0 0 0 120px; }
+    .sc-10 .product-image-container .product-image {
+      position: relative;
+      width: 490px;
+      height: 490px;
+      float: left;
+      border-radius: 100%;
+      background: #e23c3c;
+      z-index: 4; }
+      .sc-10 .product-image-container .product-image img {
+        max-width: 548px;
+        height: auto;
+        position: absolute;
+        top: -135px;
+        right: 0px; }
+    .sc-10 .product-image-container .berry {
+      width: 857px;
+      height: 677px;
+      position: absolute;
+      top: -200px;
+      left: -170px;
+      background: url(../images/berry_group.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 3; }
+    .sc-10 .product-image-container .leaf_back {
+      width: 853px;
+      height: 817px;
+      position: absolute;
+      top: -200px;
+      left: -170px;
+      background: url(../images/leaf_back.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 2; }
+    .sc-10 .product-image-container .leaf_front {
+      width: 703px;
+      height: 564px;
+      position: absolute;
+      top: -50px;
+      left: -110px;
+      background: url(../images/leaf_front.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      z-index: 1; }
+  .sc-10 .card {
+    position: relative;
+    display: inline-block;
+    width: 494px;
+    float: right;
+    border-radius: 15px;
+    padding: 90px;
+    background: #f6f6f6;
+    z-index: 9; }
+    .sc-10 .card .form-title {
+      text-align: center; }
+      .sc-10 .card .form-title h3 {
+        font-size: 32px;
+        font-weight: 100;
+        line-height: 41.6px; }
+        .sc-10 .card .form-title h3 span {
+          border-radius: 5px;
+          background: #e23c3c;
+          color: #ffffff;
+          line-height: 0;
+          padding: 2px 20px; }
+    .sc-10 .card .price {
+      margin: 30px 0 0 0; }
+      .sc-10 .card .price .old {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px; }
+        .sc-10 .card .price .old span {
+          text-decoration: line-through;
+          margin: 0 0 0 20px; }
+      .sc-10 .card .price .new {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 81px;
+        color: #000000; }
+    .sc-10 .card .form-field input {
+      background: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+      margin: 10px;
+      width: 100%;
+      border-radius: 25px;
+      border: none; }
+    .sc-10 .card .button {
+      margin: 60px auto 0; }
 
 @-webkit-keyframes scale-in-center {
   0% {

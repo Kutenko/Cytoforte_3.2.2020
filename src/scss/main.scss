@@ -467,7 +467,7 @@ body{
             float: left;
             border-radius: 100%;
             background: $cinnabar;
-            z-index: 1;      
+            z-index: 4;      
             img{
                 max-width: 618px;
                 height: auto;
@@ -475,6 +475,18 @@ body{
                 top: -15px;
                 right: -50px;
             }
+        }
+        .berry{
+            width: 857px;
+            height: 677px;
+            position: absolute;
+            top: -200px;
+            left: -170px;
+            background: url(../images/berry_group.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 3;
         }
         .leaf_back{
             width: 853px;
@@ -486,7 +498,7 @@ body{
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            z-index: 0;
+            z-index: 2;
         }
         .leaf_front{
             width: 703px;
@@ -498,7 +510,7 @@ body{
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
-            z-index: 0;
+            z-index: 1;
         }
     }
     .product-price{
@@ -883,6 +895,256 @@ body{
                 left: 310px;
                 top: 0px;
             }
+        }
+    }
+}
+.sc-8{
+    .title{
+        width: 663px;
+        float: right;
+        padding: 0 90px 0 0;
+        margin-top: 260px;
+        margin-bottom: 90px;
+        z-index: 1;
+    }
+    .slider{
+        position: relative;
+        z-index: 2;
+        top: -250px;
+        max-width: 910px;
+        margin: 0 auto;
+        overflow: hidden;
+        .uk-slideshow-items{
+            overflow: visible;
+        }
+        .slider-item{
+            overflow: visible;
+            min-height: 850px;
+            .avatar{
+                width: 340px;
+                height: 350px;
+                overflow: hidden;
+                float: left;
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+            .user-card{
+                position: relative;
+                width: 700px;
+                height: 430px;
+                padding: 90px;
+                top: -100px;
+                background: #F8F1F1;
+                border-radius: 25px;
+                float: right;
+                box-shadow: 2px 2px 15px rgba(100,100,100,0.5);
+                .star-rate{
+                    span{
+                        width: 10px;
+                        height: 10px;
+                        display: inline-block;
+                        background: url(../images/star.svg);
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        margin: 0 5px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
+.sc-9{
+    padding: 90px 0 ;
+    .title{
+        text-align: center;
+        margin: 0 auto 90px;
+    }
+    .row{
+        text-align: center;
+    }
+    .item{
+        width: 300px;
+        margin: 0 45px 0;
+        padding: 30px 0 0 0 ;
+        border: dashed 1px #c3c3c3;
+        display: inline-block;
+        border-radius: 25px;
+        .image{
+            width: 240px;
+            height: 240px;
+            margin: 0 auto;
+            border-radius: 150%;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .text{
+            font-size: 18px;
+            font-weight: $fw_bold;
+            line-height: 21.6px;
+            text-align: center;
+            padding: 60px 45px 30px ;
+        }
+    }
+
+}
+.sc-10{
+    margin: 0 ;
+    padding: 90px 0;
+    overflow: hidden;
+    position: relative;
+    clear: both;
+    &::before{
+        content: '';
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gr_rose_white;
+        opacity: .9;
+    }
+    .cytoforte{
+        color: $dark_black;
+        opacity: 0.3;
+        font-size: 330px;
+        font-weight: $fw_bold;
+        text-align: center;
+        text-transform: uppercase;
+        width: 3000px;
+        height: 417px;
+        z-index: -1;
+        position: absolute;
+        top: 250px;
+        left: -1600px;
+        span{
+            margin: 0 150px 0 0;
+        }
+    }
+    .title{
+        text-align: center;
+        margin: 0 0 90px 0;
+    }
+    .product-image-container{
+        position: relative;
+        width: 490px;
+        height: 490px;
+        float: left;        
+        margin: 0 0 0 120px;
+        .product-image{
+            position: relative;
+            width: 490px;
+            height: 490px;
+            float: left;
+            border-radius: 100%;
+            background: $cinnabar;
+            z-index: 4;      
+            img{
+                max-width: 548px;
+                height: auto;
+                position: absolute;
+                top: -135px;
+                right: 0px;
+            }
+        }
+        .berry{
+            width: 857px;
+            height: 677px;
+            position: absolute;
+            top: -200px;
+            left: -170px;
+            background: url(../images/berry_group.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 3;
+        }
+        .leaf_back{
+            width: 853px;
+            height: 817px;
+            position: absolute;
+            top: -200px;
+            left: -170px;
+            background: url(../images/leaf_back.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 2;
+        }
+        .leaf_front{
+            width: 703px;
+            height: 564px;
+            position: absolute;
+            top: -50px;
+            left: -110px;
+            background: url(../images/leaf_front.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            z-index: 1;
+        }
+    }  
+    .card{
+        position: relative;
+        display: inline-block;
+        width: 494px;
+        float: right;
+        border-radius: 15px;
+        padding: 90px;
+        background: $wild_sand;
+        z-index: 9;
+        .form-title{
+            text-align: center;
+            h3{
+                font-size: 32px;
+                font-weight: 100;
+                line-height: 41.6px;
+                span{
+                    border-radius: 5px;
+                    background: $cinnabar;
+                    color: $white;
+                    line-height: 0;
+                    padding: 2px 20px ;
+                }
+            }
+        }
+        .price{
+            margin: 30px 0 0 0;
+            .old{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 24px;
+                span{
+                    text-decoration: line-through;
+                    margin: 0 0 0 20px;
+                }
+            }
+            .new{
+                font-size: 64px;
+                font-weight: $fw_bold;
+                line-height: 81px;
+                color: $dark_black;
+            }
+        }
+        .form-field{
+            input{
+                background: $white;
+                text-align: center;
+                padding: 10px 0;
+                margin: 10px;
+                width: 100%;
+                border-radius: 25px;
+                border: none;
+            }
+        }
+        .button{
+            margin: 60px auto 0;
         }
     }
 }
