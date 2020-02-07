@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Reg'), local('FuturaNewBook-Reg'),
+        url('hinted-FuturaNewBook-Reg.woff2') format('woff2'),
+        url('hinted-FuturaNewBook-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
+        url('hinted-FuturaNewBold-Reg.woff2') format('woff2'),
+        url('hinted-FuturaNewBold-Reg.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Obl'), local('FuturaNewBold-Obl'),
+        url('hinted-FuturaNewBold-Obl.woff2') format('woff2'),
+        url('hinted-FuturaNewBold-Obl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Obl'), local('FuturaNewBook-Obl'),
+        url('hinted-FuturaNewBook-Obl.woff2') format('woff2'),
+        url('hinted-FuturaNewBook-Obl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+

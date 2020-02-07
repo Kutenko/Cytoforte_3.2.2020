@@ -1,6 +1,6 @@
 // Fonts
 $ff_futura: "Futura New";
-
+$ff_futura_book: "Futura New Book";
 $fw_bold: 700;
 $fw_book: 400;
 
@@ -9,8 +9,8 @@ $fw_book: 400;
 @font-face {
     font-family: 'Futura New';
     src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
-        url('hinted-FuturaNewBold-Reg.woff2') format('woff2'),
-        url('hinted-FuturaNewBold-Reg.woff') format('woff');
+        url('../fonts/hinted-FuturaNewBold-Reg.woff2') format('woff2'),
+        url('../fonts/hinted-FuturaNewBold-Reg.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
@@ -18,14 +18,29 @@ $fw_book: 400;
 @font-face {
     font-family: 'Futura New';
     src: local('Futura New Bold Obl'), local('FuturaNewBold-Obl'),
-        url('hinted-FuturaNewBold-Obl.woff2') format('woff2'),
-        url('hinted-FuturaNewBold-Obl.woff') format('woff');
+        url('../fonts/hinted-FuturaNewBold-Obl.woff2') format('woff2'),
+        url('../fonts/hinted-FuturaNewBold-Obl.woff') format('woff');
     font-weight: bold;
     font-style: italic;
 }
 
 
-
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Obl'), local('FuturaNewBook-Obl'),
+        url('../fonts/hinted-FuturaNewBook-Obl.woff2') format('woff2'),
+        url('../fonts/hinted-FuturaNewBook-Obl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Reg'), local('FuturaNewBook-Reg'),
+        url('../fonts/hinted-FuturaNewBook-Reg.woff2') format('woff2'),
+        url('../fonts/hinted-FuturaNewBook-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 // Color
@@ -62,7 +77,7 @@ h3{
     color: $dark_black;
 }
 p{
-    font-family: $ff_futura;
+    font-family: $ff_futura_book;
     font-weight: $fw_book;
     font-size: 18px;
     line-height: 21.6px;
@@ -167,6 +182,7 @@ body{
     top: -30px;
     height: 1px;
     width: 100%;
+    z-index: 2;
         &::after{
             content: ' ';
             display: block;
@@ -248,14 +264,14 @@ body{
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: 0.7;
+        opacity: 0.8;
     }
     .container{
         position: relative;
     }
     .cytoforte{
         color: $dark_black;
-        opacity: 0.3;
+        opacity:.15;
         font-size: 330px;
         font-weight: $fw_bold;
         text-align: center;
@@ -479,14 +495,14 @@ body{
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: .9;
+        opacity: .8;
     }    
     .container{
         position: relative;
     }
     .cytoforte{
         color: $dark_black;
-        opacity: 0.3;
+        opacity: 0.15;
         font-size: 330px;
         font-weight: $fw_bold;
         text-align: center;
@@ -572,7 +588,6 @@ body{
             position: relative;
             display: inline-block;
             width: 494px;
-            height: 504px;
             border-radius: 15px;
             padding: 90px;
             background: $wild_sand;
@@ -610,13 +625,13 @@ body{
                 }
             }
             .button{
-                margin: 60px auto;
+                margin: 60px auto 0;
             }
         }
     }
 }
 .sc-4{
-    padding: 90px 0 0 0;
+    padding: 180px 0;
     overflow: hidden;
     .title{
         text-align: center;
@@ -674,7 +689,7 @@ body{
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: 0.7;
+        opacity: 0.8;
     }
     .title{
         max-width: 650px;
@@ -855,7 +870,8 @@ body{
 }
 
 .sc-6{
-    padding: 90px 0;
+    padding: 180px 0;
+    overflow: hidden;
     .product-image{
         width: 605px;
         height: 665px;
@@ -902,11 +918,12 @@ body{
         z-index: 0;
         width: 100%;
         height: 100%;
+        max-height: 830px;
         position: absolute;
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: .9;
+        opacity: .8;
     }
     .doc-info-block{
         width: 495px;
@@ -1023,7 +1040,7 @@ body{
     }
 }
 .sc-9{
-    padding: 90px 0 ;
+    padding: 180px 0 ;
     .title{
         text-align: center;
         margin: 0 auto 90px;
@@ -1076,11 +1093,11 @@ body{
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: .9;
+        opacity: .8;
     }
     .cytoforte{
         color: $dark_black;
-        opacity: 0.3;
+        opacity: 0.15;
         font-size: 330px;
         font-weight: $fw_bold;
         text-align: center;
