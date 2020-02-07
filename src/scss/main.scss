@@ -95,6 +95,8 @@ body{
 
 .button{
     max-width: 282px;
+    text-decoration: none;
+    display: block;
     padding: 16px 34px 16px;
     text-align: right;
     clear: both;
@@ -126,6 +128,7 @@ body{
     &:hover{
         border: 2px solid $cinnabar;
         padding-right: 58px;
+        text-decoration: none;
         span{
             color: $white;
             &::before{
@@ -182,6 +185,55 @@ body{
     clear: both;
     width: 100%;
 }
+
+.bubble{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    // min-width: 1920px;
+    min-height: 890px;
+    height: auto;
+    top: -0px;
+    left: -0px;
+    z-index: -1;
+    .bubble_1{
+        width: 700px;
+        height: 700px;
+        position: absolute;
+        top: -250px;
+        left: -250px;
+        background-size: contain;
+        background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 25%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+    .bubble_2{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 0;
+        left: -100px;
+        background-size: contain;
+        background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 35%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+    .bubble_3{
+        width: 900px;
+        height: 900px;
+        position: absolute;
+        top: -300px;
+        right: -300px;
+        background-size: contain;
+        background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 25%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }
+    .bubble_4{
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        bottom: 100px;
+        right: 500px;
+        background-size: contain;
+        background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 35%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%);
+    }        
+}
+
 // sc-1
 .sc-1{
     position: relative;
@@ -196,7 +248,7 @@ body{
         top: 0;
         left: 0;
         background: $gr_rose_white;
-        opacity: .9;
+        opacity: 0.7;
     }
     .container{
         position: relative;
@@ -609,8 +661,21 @@ body{
     }
 }
 .sc-5{
-    background: $rose_white;
+    // background: $rose_white;
     padding: 90px 0;
+    position: relative;
+    overflow: hidden;
+    &::before{
+        content: '';
+        z-index: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $gr_rose_white;
+        opacity: 0.7;
+    }
     .title{
         max-width: 650px;
         margin: 0 auto;
@@ -856,6 +921,7 @@ body{
         }
         .doc-name{
             width: 315px;
+            margin: 30px 0 0 ;
             p{
                 font-size: 28px;
                 font-weight: $fw_bold;
@@ -984,11 +1050,13 @@ body{
             }
         }
         .text{
-            font-size: 18px;
-            font-weight: $fw_bold;
-            line-height: 21.6px;
             text-align: center;
             padding: 60px 45px 30px ;
+            p{
+                font-size: 18px;
+                font-weight: $fw_bold;
+                line-height: 21.6px;
+            }
         }
     }
 
@@ -1036,7 +1104,7 @@ body{
         width: 490px;
         height: 490px;
         float: left;        
-        margin: 0 0 0 120px;
+        margin: 60px 0 0 120px;
         .product-image{
             position: relative;
             width: 490px;
@@ -1133,14 +1201,20 @@ body{
             }
         }
         .form-field{
-            input{
+            input,
+            select{
                 background: $white;
                 text-align: center;
-                padding: 10px 0;
-                margin: 10px;
+                text-align-last: center;
+                padding: 15px 15px;
+                margin: 10px 0;
                 width: 100%;
                 border-radius: 25px;
                 border: none;
+            }
+            option{
+                text-align: center;
+                text-align-last: center;
             }
         }
         .button{

@@ -60,6 +60,8 @@ body {
 
 .button {
   max-width: 282px;
+  text-decoration: none;
+  display: block;
   padding: 16px 34px 16px;
   text-align: right;
   clear: both;
@@ -88,7 +90,8 @@ body {
       z-index: -1; }
   .button:hover {
     border: 2px solid #e23c3c;
-    padding-right: 58px; }
+    padding-right: 58px;
+    text-decoration: none; }
     .button:hover span {
       color: #ffffff; }
       .button:hover span::before {
@@ -138,6 +141,48 @@ body {
   clear: both;
   width: 100%; }
 
+.bubble {
+  position: absolute;
+  opacity: 1;
+  width: 100%;
+  min-height: 890px;
+  height: auto;
+  top: -0px;
+  left: -0px;
+  z-index: -1; }
+  .bubble .bubble_1 {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: -250px;
+    left: -250px;
+    background-size: contain;
+    background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 25%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+  .bubble .bubble_2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 0;
+    left: -100px;
+    background-size: contain;
+    background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 35%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+  .bubble .bubble_3 {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: -300px;
+    right: -300px;
+    background-size: contain;
+    background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 25%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+  .bubble .bubble_4 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    bottom: 100px;
+    right: 500px;
+    background-size: contain;
+    background: radial-gradient(circle, rgba(226, 60, 60, 0.8) 0%, rgba(226, 60, 60, 0.1) 35%, rgba(226, 60, 60, 0) 75%, rgba(255, 255, 255, 0) 100%); }
+
 .sc-1 {
   position: relative;
   min-height: 890px;
@@ -151,7 +196,7 @@ body {
     top: 0;
     left: 0;
     background: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
-    opacity: .9; }
+    opacity: 0.7; }
   .sc-1 .container {
     position: relative; }
   .sc-1 .cytoforte {
@@ -497,8 +542,19 @@ body {
       text-align: center; }
 
 .sc-5 {
-  background: #fff9f8;
-  padding: 90px 0; }
+  padding: 90px 0;
+  position: relative;
+  overflow: hidden; }
+  .sc-5::before {
+    content: '';
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #E4D2D2, #FFFFFF, #FFF9F8);
+    opacity: 0.7; }
   .sc-5 .title {
     max-width: 650px;
     margin: 0 auto;
@@ -697,7 +753,8 @@ body {
       width: 495px;
       height: 420px; }
     .sc-7 .doc-info-block .doc-name {
-      width: 315px; }
+      width: 315px;
+      margin: 30px 0 0; }
       .sc-7 .doc-info-block .doc-name p {
         font-size: 28px;
         font-weight: 700;
@@ -803,11 +860,12 @@ body {
         width: 100%;
         height: auto; }
     .sc-9 .item .text {
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 21.6px;
       text-align: center;
       padding: 60px 45px 30px; }
+      .sc-9 .item .text p {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 21.6px; }
 
 .sc-10 {
   margin: 0;
@@ -848,7 +906,7 @@ body {
     width: 490px;
     height: 490px;
     float: left;
-    margin: 0 0 0 120px; }
+    margin: 60px 0 0 120px; }
     .sc-10 .product-image-container .product-image {
       position: relative;
       width: 490px;
@@ -931,14 +989,19 @@ body {
         font-weight: 700;
         line-height: 81px;
         color: #000000; }
-    .sc-10 .card .form-field input {
+    .sc-10 .card .form-field input,
+    .sc-10 .card .form-field select {
       background: #ffffff;
       text-align: center;
-      padding: 10px 0;
-      margin: 10px;
+      text-align-last: center;
+      padding: 15px 15px;
+      margin: 10px 0;
       width: 100%;
       border-radius: 25px;
       border: none; }
+    .sc-10 .card .form-field option {
+      text-align: center;
+      text-align-last: center; }
     .sc-10 .card .button {
       margin: 60px auto 0; }
 

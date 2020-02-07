@@ -19,6 +19,11 @@ html(lang="en")
                 span cytforte
                 span cytforte
                 span cytforte
+            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2")
+                .bubble_1
+                .bubble_2
+                .bubble_3
+                .bubble_4
             .container
                 .row
                     .logo
@@ -32,12 +37,12 @@ html(lang="en")
                                 span CYTOFORTE
                             .right
                                 p Избавляет от симптомов цистита гораздо быстрее привычных методов , боль и дизкомфорт останутся в прошлом
-                        .button
+                        a.button(href="#form" uk-scroll)
                             span ЗАКАЗАТЬ СЕЙЧАС
                     .product-image
                         img(src="images/product.png", alt="", srcset="images/product.png")
                         .ellipse
-                        .leaf( uk-parallax="x: 0, -200; y: 0, -200")
+                        .leaf( uk-parallax="x: 0, -400; y: 0, -400; scale: 1, 2")
 
         .sc_decor
         section.sc-2
@@ -71,6 +76,11 @@ html(lang="en")
                 span cytforte
                 span cytforte
                 span cytforte
+            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2")
+                .bubble_1
+                .bubble_2
+                .bubble_3
+                .bubble_4
             .container
                 .row
                     .title
@@ -81,7 +91,7 @@ html(lang="en")
                             img(src="images/product.png", alt="", srcset="images/product.png")                      
                         .berry( uk-parallax="scale: 0, 1, 1, 1")
                         .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1")
-                        .leaf_front( uk-parallax="scale: 0, 1, 1")
+                        .leaf_front( uk-parallax="scale: 0, 1, 1, 1")
                     .product-price
                         .card
                             .title
@@ -94,7 +104,7 @@ html(lang="en")
                                     |Старая цена
                                     span 3790 руб. 
                                 .new 1890 руб.
-                            .button
+                            a.button(href="#form" uk-scroll)
                                 span ЗАКАЗАТЬ СЕЙЧАС  
         section.sc-4
             .container
@@ -106,28 +116,28 @@ html(lang="en")
                             Не омрачайте жизнь неприятностями. Всего несколько простых правил помогут избежать заболевания: 
                 .row
                     .container-item
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
                             .image
                                 img(src="images/item_img_1.png", alt="", srcset="")
                             .text
                                 p.
                                     Примите 2 капсулы Cyto Forte перед половым актом или сразу после него
                         //**//**//
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
                             .image
                                 img(src="images/item_img_2.png", alt="", srcset="")
                             .text
                                 p.
                                     Опорожняйте мочевой пузырь сразу после секса            
                         //**//**//
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
                             .image
                                 img(src="images/item_img_3.png", alt="", srcset="")
                             .text
                                 p.
                                     Соблюдайте тщательную гигиену во время полового контакта
                         //**//**//
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
                             .image
                                 img(src="images/item_img_4.png", alt="", srcset="")
                             .text
@@ -135,20 +145,25 @@ html(lang="en")
                                     Меняйте презерватив если совмещаете несколько видов проникновений 
                                     ( оральное, вагинальное, анальное )
                         //**//**//
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
                             .image
                                 img(src="images/item_img_5.png", alt="", srcset="")
                             .text
                                 p.
                                     Используйте дополнительную смазку при чрезмерной сухости влагалища
                         //**//**//
-                        .item   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
                             .image
                                 img(src="images/item_img_6.png", alt="", srcset="")
                             .text
                                 p.
                                     Контролируйте силу и резкость интимных проникновений
         section.sc-5
+            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2")
+                .bubble_1
+                .bubble_2
+                .bubble_3
+                .bubble_4
             .container
                 .row
                     .title
@@ -182,7 +197,7 @@ html(lang="en")
                                         mixin table-cell(...nums)
                                             each num in nums
                                                 div&attributes(attributes)
-                                                    div(data=num)
+                                                    div(data=num uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true")
                                         +table-cell( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)(class="table-cell")
                         +table-column( 1, 2, 3, 4)(class="table-columns")
                         .type
@@ -204,7 +219,7 @@ html(lang="en")
             .container
                 .product-image
                     .vitamine
-                        img(src="images/vitamine.png", alt="", srcset="", uk-parallax="scale: 0, 1")
+                        img(src="images/vitamine.png", alt="", srcset="", uk-parallax="scale: 0, 1, 1, 1, 1")
                     .product-img
                         img(src="images/product.png", alt="", srcset="")
                 .text-block
@@ -263,8 +278,8 @@ html(lang="en")
                     .title
                         h2 Они уже оценили эффект
                 .row
-                    .slider(uk-slideshow)
-                        .uk-slideshow-items
+                    .slider(uk-slider)
+                        .uk-slider-items
                             .slider-item
                                 .avatar
                                     img(src="images/ava_1.jpg", alt="", srcset="")
@@ -310,17 +325,17 @@ html(lang="en")
                     .title
                         h2 Как заказать Cytoforte ?
                 .row
-                    .item
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
                         .image
                             img(src="images/how_to_image_1.png", alt="")
                         .text
                             p Оставьте заявку на нашем сайте
-                    .item
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
                         .image
                             img(src="images/how_to_image_2.png", alt="")
                         .text
                             p Наш менеджер свяжется с вами 
-                    .item
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
                         .image
                             img(src="images/how_to_image_3.png", alt="")
                         .text
@@ -331,6 +346,11 @@ html(lang="en")
                 span cytforte
                 span cytforte
                 span cytforte
+            .bubble( uk-parallax="x: 400, 0; y: 400, 0; scale: 2, 1")
+                .bubble_1
+                .bubble_2
+                .bubble_3
+                .bubble_4                
             .container
                 .row
                     .title
@@ -353,14 +373,13 @@ html(lang="en")
                                     |Старая цена
                                     span 3790 руб. 
                                 .new 1890 руб.
-                            form
+                            form#form
                             .form-field
-                                input(type="text", placeholder="Страна")
+                                select#country_code_selector(name="country_code")
+                                    option(value="Ru") Russia
                             .form-field
-                                input(type="text")
+                                input(type="text" name="name" placeholder="Ваше Имя")
                             .form-field
-                                input(type="text")
+                                input(type="text"  name="phone" placeholder="Ваш телефон" )
                             .button.js_submit
                                 span ЗАКАЗАТЬ СЕЙЧАС
-
-                
