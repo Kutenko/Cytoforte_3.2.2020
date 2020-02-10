@@ -1,10 +1,26 @@
 // Fonts
 $ff_futura: "Futura New";
+$ff_futura_book: "Futura New Book";
 
 $fw_bold: 700;
 $fw_book: 400;
 
-
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Reg'), local('FuturaNewBook-Reg'),
+        url('hinted-FuturaNewBook-Reg.woff2') format('woff2'),
+        url('hinted-FuturaNewBook-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura New Book';
+    src: local('Futura New Book Obl'), local('FuturaNewBook-Obl'),
+        url('hinted-FuturaNewBook-Obl.woff2') format('woff2'),
+        url('hinted-FuturaNewBook-Obl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
 
 @font-face {
     font-family: 'Futura New';
@@ -62,20 +78,20 @@ h3{
     color: $dark_black;
 }
 p{
-    font-family: $ff_futura;
+    font-family: $ff_futura_book;
     font-weight: $fw_book;
     font-size: 18px;
     line-height: 21.6px;
     color: $dark_black;
 }
-span{
-    font-family: $ff_futura;
-}
+// span{
+//     font-family: $ff_futura_book;
+// }
 
 // Main style
 
 body{
-    font-family: $ff_futura;
+    font-family: $ff_futura_book;
 }
 
 *{
@@ -109,6 +125,7 @@ body{
     span{
         position: relative;
         font-size: 18px;
+        font-family: $ff_futura;
         font-weight: $fw_bold;
         line-height: 21.6px;
         transition: .4s ease-in-out;
@@ -258,6 +275,7 @@ body{
         opacity: 0.3;
         font-size: 330px;
         font-weight: $fw_bold;
+        font-family: $ff_futura;
         text-align: center;
         text-transform: uppercase;
         width: 3000px;
@@ -292,6 +310,10 @@ body{
         .subtitle{
             margin: 0 0 60px;
             overflow: hidden;
+            span{
+                font-family: $ff_futura;
+                font-weight: $fw_bold;
+            }
             .left{
                 width: 315px;
                 float: left;
@@ -489,6 +511,7 @@ body{
         opacity: 0.3;
         font-size: 330px;
         font-weight: $fw_bold;
+        font-family: $ff_futura;
         text-align: center;
         text-transform: uppercase;
         width: 3000px;
@@ -572,7 +595,6 @@ body{
             position: relative;
             display: inline-block;
             width: 494px;
-            height: 504px;
             border-radius: 15px;
             padding: 90px;
             background: $wild_sand;
@@ -605,6 +627,7 @@ body{
                 .new{
                     font-size: 64px;
                     font-weight: $fw_bold;
+                    font-family: $ff_futura;
                     line-height: 81px;
                     color: $dark_black;
                 }
@@ -856,6 +879,7 @@ body{
 
 .sc-6{
     padding: 90px 0;
+    overflow: hidden;
     .product-image{
         width: 605px;
         height: 665px;
@@ -901,7 +925,7 @@ body{
         content: '';
         z-index: 0;
         width: 100%;
-        height: 100%;
+        height: 830px;
         position: absolute;
         top: 0;
         left: 0;
@@ -965,19 +989,18 @@ body{
     }
 }
 .sc-8{
+    padding: 90px 0 ;
     .title{
-        width: 663px;
-        float: right;
-        padding: 0 90px 0 0;
-        margin-top: 260px;
-        margin-bottom: 90px;
+        width: 430px;
+        left: 550px;
+        top: 50px;
+        position: absolute;
         z-index: 1;
     }
     .slider{
         position: relative;
         z-index: 2;
-        top: -250px;
-        max-width: 910px;
+        max-width: 1080px;
         margin: 0 auto;
         overflow: hidden;
         .uk-slideshow-items{
@@ -985,7 +1008,7 @@ body{
         }
         .slider-item{
             overflow: visible;
-            min-height: 850px;
+            // min-height: 850px !important;
             .avatar{
                 width: 340px;
                 height: 350px;
@@ -998,10 +1021,10 @@ body{
             }
             .user-card{
                 position: relative;
-                width: 700px;
-                height: 430px;
+                width: 820px;
                 padding: 90px;
-                top: -100px;
+                left: -30px;
+                top: -135px;
                 background: #F8F1F1;
                 border-radius: 25px;
                 float: right;
@@ -1083,6 +1106,7 @@ body{
         opacity: 0.3;
         font-size: 330px;
         font-weight: $fw_bold;
+        font-family: $ff_futura;
         text-align: center;
         text-transform: uppercase;
         width: 3000px;
@@ -1195,6 +1219,7 @@ body{
             }
             .new{
                 font-size: 64px;
+                font-family: $ff_futura;
                 font-weight: $fw_bold;
                 line-height: 81px;
                 color: $dark_black;
