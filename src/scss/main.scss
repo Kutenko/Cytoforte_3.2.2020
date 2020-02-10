@@ -184,6 +184,7 @@ body{
     top: -30px;
     height: 1px;
     width: 100%;
+    z-index: 9999;
         &::after{
             content: ' ';
             display: block;
@@ -639,7 +640,7 @@ body{
     }
 }
 .sc-4{
-    padding: 90px 0 0 0;
+    padding: 90px 0;
     overflow: hidden;
     .title{
         text-align: center;

@@ -133,7 +133,8 @@ body {
   position: relative;
   top: -30px;
   height: 1px;
-  width: 100%; }
+  width: 100%;
+  z-index: 9999; }
   .sc_decor::after {
     content: ' ';
     display: block;
@@ -519,7 +520,7 @@ body {
         margin: 60px auto; }
 
 .sc-4 {
-  padding: 90px 0 0 0;
+  padding: 90px 0;
   overflow: hidden; }
   .sc-4 .title {
     text-align: center;
