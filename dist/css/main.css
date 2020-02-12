@@ -850,6 +850,68 @@ body {
           background-position: center;
           background-repeat: no-repeat;
           margin: 0 5px 0 0; }
+    .sc-8 .slider .slider-navigate_layout {
+      text-align: center;
+      padding: 90px 0 0 0; }
+      .sc-8 .slider .slider-navigate_layout a.slider-next {
+        width: 120px;
+        height: 40px;
+        display: inline-block;
+        background: url("../images/next.svg");
+        background-position: center right;
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: ease-in-out .2s; }
+        .sc-8 .slider .slider-navigate_layout a.slider-next:active {
+          transform: matrix(1, 0, 0, 1, 30, 0); }
+      .sc-8 .slider .slider-navigate_layout .slider-navigate {
+        display: inline-block; }
+        .sc-8 .slider .slider-navigate_layout .slider-navigate li {
+          list-style: none;
+          float: left;
+          margin: 0 10px 0 0;
+          width: 40px;
+          height: 40px; }
+          .sc-8 .slider .slider-navigate_layout .slider-navigate li a {
+            width: 10px;
+            height: 10px;
+            display: block;
+            background: #000000;
+            border-radius: 100%;
+            position: absolute;
+            margin: 15px; }
+          .sc-8 .slider .slider-navigate_layout .slider-navigate li.uk-active a::before {
+            position: absolute;
+            content: '';
+            display: block;
+            width: 38px;
+            height: 38px;
+            border: solid 1px #e23c3c;
+            border-radius: 100%;
+            top: -15px;
+            left: -15px;
+            -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+            animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
 
 .sc-9 {
   padding: 90px 0; }
@@ -982,6 +1044,7 @@ body {
     .sc-10 .card .form-title {
       text-align: center; }
       .sc-10 .card .form-title h3 {
+        font-family: "Futura New Book";
         font-size: 32px;
         font-weight: 100;
         line-height: 41.6px; }

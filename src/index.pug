@@ -278,14 +278,14 @@ html(lang="en")
         section.sc-8
             .container
                 .row
-                    .title
+                    .title(uk-parallax="y: 150, -50")
                         h2 Они уже оценили эффект
-                    .slider(uk-slideshow="animation: fade")
+                    .slider(uk-slideshow="animation: fade" uk-parallax="y: 150, -150")
                         .uk-slideshow-items
                             .slider-item
-                                .avatar
+                                .avatar.uk-animation-slide-left
                                     img(src="images/ava_1.jpg", alt="", srcset="")
-                                .user-card
+                                .user-card.uk-animation-slide-right
                                     .star-rate
                                         span
                                         span
@@ -302,9 +302,9 @@ html(lang="en")
                                             И мне и мужу помог Cyto Forte - оба пропили курс. Анализы подтвердили выздоровление. 
                                             Рецидива не последовало даже спустя полгода.
                             .slider-item
-                                .avatar
-                                    img(src="images/ava_1.jpg", alt="", srcset="")
-                                .user-card
+                                .avatar.uk-animation-slide-left
+                                    img(src="images/ava_2.jpg", alt="", srcset="")
+                                .user-card.uk-animation-slide-right
                                     .star-rate
                                         span
                                         span
@@ -312,15 +312,13 @@ html(lang="en")
                                         span
                                         span
                                     .user-name
-                                        h3 Ирина 36 лет
+                                        h3 Ольга 46 лет
                                     .user-comment
                                         p.
-                                            Со студенчества каждую зиму спала с грелкой. Ничего не помогало полностью вылечиться. 
-                                            Со временем даже у мужа начались проблемы. Доктор сказал, что я  заразила. 
-                                            Никакие спринцевания и антибиотики не помогали. Каждый анализ показывал наличие палочки E.coli. 
-                                            И мне и мужу помог Cyto Forte - оба пропили курс. Анализы подтвердили выздоровление. 
-                                            Рецидива не последовало даже спустя полгода.                                        
-                        .slider-navigate.uk-slideshow-nav.uk-dotnav
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum obcaecati ea inventore dolorum nemo quis ad non quos fugiat fugit. Distinctio ullam quae debitis, eaque architecto adipisci quia facilis et?
+                        .slider-navigate_layout
+                            .slider-navigate.uk-slideshow-nav
+                            a.slider-next( uk-slideshow-item="next" href="#")
         section.sc-9
             .container
                 .row
