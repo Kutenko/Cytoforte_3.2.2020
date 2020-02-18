@@ -10,7 +10,7 @@ html(lang="en")
         link(rel="stylesheet", href="css/main.css")
 
         script(src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js")
-        script(src="js/app.min.js")
+        //- script(src="js/app.min.js")
 
     body
         section.sc-1
@@ -42,22 +42,30 @@ html(lang="en")
                     .product-image
                         img(src="images/product.png", alt="", srcset="images/product.png")
                         .ellipse
-                        .leaf( uk-parallax="x: 0, -400; y: 0, -400; scale: 1, 2")
-
+                        .leaf( uk-parallax="x: 0, -400; y: 0, -400; scale: 1, 2; media: (min-width:720px)")
+                    .subtitle__mobile
+                        .left
+                            span CYTOFORTE
+                        .right
+                            p Избавляет от симптомов цистита гораздо быстрее привычных методов , боль и дизкомфорт останутся в прошлом
+                    a.button.__mobile(href="#form" uk-scroll)
+                        span ЗАКАЗАТЬ СЕЙЧАС
         .sc_decor
         section.sc-2
             .container
                 .row
                     .image__r-1
-                        img(src="images/image_woman.jpeg", alt="", uk-parallax="y: 100, -100")
-                    .text-block__r-1(uk-parallax="y: 50, -50")
+                        img(src="images/image_woman.jpeg", alt="", uk-parallax="y: 100, -100; media: (min-width:720px)")
+                    .text-block__r-1(uk-parallax="y: 50, -50; media: (min-width:720px)")
                         h2 Снова завязывает <br> в узел ? 
                         p По статистике ВОЗ каждая четвертая женщина переносит заболевания мочевыводящих путей минимум 6 раз за жизнь, и 65% из них в хронической форме.
+                    .image__r-1__mobile
+                        img(src="images/image_woman.jpeg", alt="", uk-parallax="y: 100, -100; media: (min-width:720px)")
                 .row
                     .quote
                         p Дискомфорт, жжение и режущая боль во время мочеиспускания, а также частые позывы и неприятный запах - все это симптомы цистита, который возникает по нескольким причинам:
                 .row
-                    .text-block__r-2(uk-parallax="y: 50, -50")
+                    .text-block__r-2(uk-parallax="y: 50, -50; media: (min-width:720px)")
                         ul
                             li.icon-1
                                 h3 Последствия после секса
@@ -69,15 +77,15 @@ html(lang="en")
                                 h3 Последствия заболеваний
                                 p Опущение органов малого таза, нарушение вагинальной микрофлоры и гормональный дисбаланс приводит к атрофии слизистой оболочки мочевого пузыря, что также создает условия для размножения палочки - возбудителя цистита <b>E.coli</b>. 
                     .image__r-2
-                        img(src="images/image_sex.jpeg", alt="", srcset="", uk-parallax="y: 100, -100")
+                        img(src="images/image_sex.jpeg", alt="", srcset="", uk-parallax="y: 100, -100; media: (min-width:720px)")
         .sc_decor
         section.sc-3
-            .cytoforte(uk-parallax="x: 0, 500") 
+            .cytoforte(uk-parallax="x: 0, 500; media: (min-width:720px)") 
                 span cytforte
                 span cytforte
                 span cytforte
                 span cytforte
-            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2")
+            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2; media: (min-width:720px)")
                 .bubble_1
                 .bubble_2
                 .bubble_3
@@ -89,10 +97,10 @@ html(lang="en")
                 .row
                     .product-image-container
                         .product-image
-                            img(src="images/product.png", alt="", srcset="images/product.png")                      
-                        .berry( uk-parallax="scale: 0, 1, 1, 1")
-                        .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1")
-                        .leaf_front( uk-parallax="scale: 0, 1, 1, 1")
+                            img(src="images/product.png", alt="", srcset="images/product.png; media: (min-width:720px)")                      
+                        .berry( uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)")
+                        .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)")
+                        .leaf_front( uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)")
                     .product-price
                         .card
                             .title
@@ -117,28 +125,28 @@ html(lang="en")
                             Не омрачайте жизнь неприятностями. Всего несколько простых правил помогут избежать заболевания: 
                 .row
                     .container-item
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_1.png", alt="", srcset="")
                             .text
                                 p.
                                     Примите 2 капсулы Cyto Forte перед половым актом или сразу после него
                         //**//**//
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_2.png", alt="", srcset="")
                             .text
                                 p.
                                     Опорожняйте мочевой пузырь сразу после секса            
                         //**//**//
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_3.png", alt="", srcset="")
                             .text
                                 p.
                                     Соблюдайте тщательную гигиену во время полового контакта
                         //**//**//
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_4.png", alt="", srcset="")
                             .text
@@ -146,14 +154,14 @@ html(lang="en")
                                     Меняйте презерватив если совмещаете несколько видов проникновений 
                                     ( оральное, вагинальное, анальное )
                         //**//**//
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_5.png", alt="", srcset="")
                             .text
                                 p.
                                     Используйте дополнительную смазку при чрезмерной сухости влагалища
                         //**//**//
-                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
+                        .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)")   
                             .image
                                 img(src="images/item_img_6.png", alt="", srcset="")
                             .text
@@ -161,7 +169,7 @@ html(lang="en")
                                     Контролируйте силу и резкость интимных проникновений
         .sc_decor
         section.sc-5
-            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2")
+            .bubble( uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2; media: (min-width:720px)")
                 .bubble_1
                 .bubble_2
                 .bubble_3
@@ -199,7 +207,7 @@ html(lang="en")
                                         mixin table-cell(...nums)
                                             each num in nums
                                                 div&attributes(attributes)
-                                                    div(data=num uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true")
+                                                    div(data=num uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)")
                                         +table-cell( 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17)(class="table-cell")
                         +table-column( 1, 2, 3, 4)(class="table-columns")
                         .type
@@ -219,14 +227,18 @@ html(lang="en")
                             b Помогает при  посткоитальном цистите.
         section.sc-6
             .container
+                .title__mobile
+                    h2 0% антибиотиков 100% органических компонентов 
+                    p Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта. 
                 .product-image
                     .vitamine
-                        img(src="images/vitamine.png", alt="", srcset="", uk-parallax="scale: 0, 1, 1, 1, 1")
+                        img(src="images/vitamine.png", alt="", srcset="", uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)")
                     .product-img
                         img(src="images/product.png", alt="", srcset="")
                 .text-block
-                    h2 0% антибиотиков 100% органических компонентов 
-                    p Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта.                 
+                    .title
+                        h2 0% антибиотиков 100% органических компонентов 
+                        p Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта.                 
                     ul
                         li
                             p
@@ -254,14 +266,14 @@ html(lang="en")
         section.sc-7
             .container
                 .row
-                    .doc-info-block(uk-parallax="y: 100, -100")
+                    .doc-info-block(uk-parallax="y: 100, -100; media: (min-width:720px)")
                         .doc-image
                             img(src="images/doc_image.jpeg", alt="", srcset="")
                         .doc-name
                             p Эрнест Гулий
                         .doc-info
                             p Эксперт в области урологии, опыт работы с пациентами более 17 лет.
-                    .text-block(uk-parallax="y: 50, -50")
+                    .text-block(uk-parallax="y: 50, -50; media: (min-width:720px)")
                         h2 Безопасный аналог антибиотиков
                         p.
                             Раньше стандартом лечения цистита была антибиотикотерапия. Но для предотвращения рецидивов и полного излечения этого мало  бактерии привыкают к антибиотикам, возникает резистентность. Кроме того, антибиотик не снимает болевой симптом и мышечный спазм при затрудненном мочеиспускании.
@@ -278,9 +290,9 @@ html(lang="en")
         section.sc-8
             .container
                 .row
-                    .title(uk-parallax="y: 150, -50")
+                    .title(uk-parallax="y: 150, -50; media: (min-width:720px)")
                         h2 Они уже оценили эффект
-                    .slider(uk-slideshow="animation: fade" uk-parallax="y: 150, -150")
+                    .slider(uk-slideshow="animation: fade" uk-parallax="y: 150, -150; media: (min-width:720px)")
                         .uk-slideshow-items
                             .slider-item
                                 .avatar.uk-animation-slide-left
@@ -325,29 +337,29 @@ html(lang="en")
                     .title
                         h2 Как заказать Cytoforte ?
                 .row
-                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true")   
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)")   
                         .image
                             img(src="images/how_to_image_1.png", alt="")
                         .text
                             p Оставьте заявку на нашем сайте
-                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true")   
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)")   
                         .image
                             img(src="images/how_to_image_2.png", alt="")
                         .text
                             p Наш менеджер свяжется с вами 
-                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true")   
+                    .item(uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)")   
                         .image
                             img(src="images/how_to_image_3.png", alt="")
                         .text
                             p Оплатите заказ во время получения 
         .sc_decor
         section.sc-10
-            .cytoforte(uk-parallax="x: 0, 500") 
+            .cytoforte(uk-parallax="x: 0, 500; media: (min-width:720px)") 
                 span cytforte
                 span cytforte
                 span cytforte
                 span cytforte
-            .bubble( uk-parallax="x: 400, 0; y: 400, 0; scale: 2, 1")
+            .bubble( uk-parallax="x: 400, 0; y: 400, 0; scale: 2, 1; media: (min-width:720px)")
                 .bubble_1
                 .bubble_2
                 .bubble_3
@@ -360,9 +372,9 @@ html(lang="en")
                     .product-image-container
                         .product-image
                             img(src="images/woman-image.png", alt="", srcset="images/woman-image.png")                      
-                        .berry( uk-parallax="scale: 0, 1, 1, 1")
-                        .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1")
-                        .leaf_front( uk-parallax="scale: 0, 1, 1")
+                        .berry( uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)")
+                        .leaf_back( uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)")
+                        .leaf_front( uk-parallax="scale: 0, 1, 1; media: (min-width:720px)")
                     .card
                         .form-title
                             h3
