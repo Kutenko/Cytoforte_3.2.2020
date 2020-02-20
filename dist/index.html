@@ -8,7 +8,6 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/css/uikit.min.css"/>
 		<link rel="stylesheet" href="css/main.css"/>
 		<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.0/dist/js/uikit.min.js"></script>
-		<script src="js/app.min.js"></script>
 	</head>
 	<body>
 		<section class="sc-1">
@@ -37,8 +36,14 @@
 					</div>
 					<div class="product-image"><img src="images/product.png" alt="" srcset="images/product.png"/>
 						<div class="ellipse"></div>
-						<div class="leaf" uk-parallax="x: 0, -400; y: 0, -400; scale: 1, 2"></div>
+						<div class="leaf" uk-parallax="x: 0, -400; y: 0, -400; scale: 1, 2; media: (min-width:720px)"></div>
 					</div>
+					<div class="subtitle__mobile">
+						<div class="left"><span>CYTOFORTE</span></div>
+						<div class="right">
+							<p>Избавляет от симптомов цистита гораздо быстрее привычных методов , боль и дизкомфорт останутся в прошлом</p>
+						</div>
+					</div><a class="button __mobile" href="#form" uk-scroll="uk-scroll"><span>ЗАКАЗАТЬ СЕЙЧАС</span></a>
 				</div>
 			</div>
 		</section>
@@ -46,11 +51,12 @@
 		<section class="sc-2">
 			<div class="container">
 				<div class="row">
-					<div class="image__r-1"><img src="images/image_woman.jpeg" alt="" uk-parallax="y: 100, -100"/></div>
-					<div class="text-block__r-1" uk-parallax="y: 50, -50">
+					<div class="image__r-1"><img src="images/image_woman.jpeg" alt="" uk-parallax="y: 100, -100; media: (min-width:720px)"/></div>
+					<div class="text-block__r-1" uk-parallax="y: 50, -50; media: (min-width:720px)">
 						<h2>Снова завязывает <br> в узел ? </h2>
 						<p>По статистике ВОЗ каждая четвертая женщина переносит заболевания мочевыводящих путей минимум 6 раз за жизнь, и 65% из них в хронической форме.</p>
 					</div>
+					<div class="image__r-1__mobile"><img src="images/image_woman.jpeg" alt="" uk-parallax="y: 100, -100; media: (min-width:720px)"/></div>
 				</div>
 				<div class="row">
 					<div class="quote">
@@ -58,7 +64,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="text-block__r-2" uk-parallax="y: 50, -50">
+					<div class="text-block__r-2" uk-parallax="y: 50, -50; media: (min-width:720px)">
 						<ul>
 							<li class="icon-1">
 								<h3>Последствия после секса</h3>
@@ -74,14 +80,14 @@
 							</li>
 						</ul>
 					</div>
-					<div class="image__r-2"><img src="images/image_sex.jpeg" alt="" srcset="" uk-parallax="y: 100, -100"/></div>
+					<div class="image__r-2"><img src="images/image_sex.jpeg" alt="" srcset="" uk-parallax="y: 100, -100; media: (min-width:720px)"/></div>
 				</div>
 			</div>
 		</section>
 		<div class="sc_decor"></div>
 		<section class="sc-3">
-			<div class="cytoforte" uk-parallax="x: 0, 500"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
-			<div class="bubble" uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2">
+			<div class="cytoforte" uk-parallax="x: 0, 500; media: (min-width:720px)"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
+			<div class="bubble" uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2; media: (min-width:720px)">
 				<div class="bubble_1"></div>
 				<div class="bubble_2"></div>
 				<div class="bubble_3"></div>
@@ -95,15 +101,15 @@
 				</div>
 				<div class="row">
 					<div class="product-image-container">
-						<div class="product-image"><img src="images/product.png" alt="" srcset="images/product.png"/></div>
-						<div class="berry" uk-parallax="scale: 0, 1, 1, 1"></div>
-						<div class="leaf_back" uk-parallax="scale: 0, 1, 1, 1, 1"></div>
-						<div class="leaf_front" uk-parallax="scale: 0, 1, 1, 1"></div>
+						<div class="product-image"><img src="images/product.png" alt="" srcset="images/product.png; media: (min-width:720px)"/></div>
+						<div class="berry" uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)"></div>
+						<div class="leaf_back" uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)"></div>
+						<div class="leaf_front" uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)"></div>
 					</div>
 					<div class="product-price">
 						<div class="card">
 							<div class="title">
-								<h3>Успей купить Cyto Forte<br/><span>со скидкой 50% </span></h3>
+								<h3>Успей купить Cyto&nbsp;Forte<br/><span>со скидкой 50% </span></h3>
 							</div>
 							<div class="price">
 								<div class="old">
@@ -127,28 +133,28 @@
 				</div>
 				<div class="row">
 					<div class="container-item">
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_1.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>Примите 2 капсулы Cyto Forte перед половым актом или сразу после него</p>
 							</div>
 						</div>
 						<!--**//**//-->
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_2.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>Опорожняйте мочевой пузырь сразу после секса            </p>
 							</div>
 						</div>
 						<!--**//**//-->
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_3.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>Соблюдайте тщательную гигиену во время полового контакта</p>
 							</div>
 						</div>
 						<!--**//**//-->
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_4.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>
@@ -158,14 +164,14 @@
 							</div>
 						</div>
 						<!--**//**//-->
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_5.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>Используйте дополнительную смазку при чрезмерной сухости влагалища</p>
 							</div>
 						</div>
 						<!--**//**//-->
-						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">  
+						<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)">  
 							<div class="image"><img src="images/item_img_6.png" alt="" srcset=""/></div>
 							<div class="text">
 								<p>Контролируйте силу и резкость интимных проникновений</p>
@@ -177,7 +183,7 @@
 		</section>
 		<div class="sc_decor"></div>
 		<section class="sc-5">
-			<div class="bubble" uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2">
+			<div class="bubble" uk-parallax="x: 0, 400; y: 0, 400; scale: 1, 2; media: (min-width:720px)">
 				<div class="bubble_1"></div>
 				<div class="bubble_2"></div>
 				<div class="bubble_3"></div>
@@ -216,214 +222,214 @@
 												<div class="table-columns">
 													<div class="1">
 																						<div class="table-cell">
-																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 													</div>
 													<div class="2">
 																						<div class="table-cell">
-																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 													</div>
 													<div class="3">
 																						<div class="table-cell">
-																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 													</div>
 													<div class="4">
 																						<div class="table-cell">
-																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="1" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="2" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="3" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="4" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="5" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="6" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="7" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="8" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="9" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="10" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="11" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="12" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="13" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="14" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="15" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="16" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 																						<div class="table-cell">
-																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true"></div>
+																							<div data="17" uk-scrollspy="cls: uk-animation-scale-down; delay: 500; repeat: true; media: (min-width:720px)"></div>
 																						</div>
 													</div>
 												</div>
@@ -447,13 +453,19 @@
 		</section>
 		<section class="sc-6">
 			<div class="container">
+				<div class="title__mobile">
+					<h2>0% антибиотиков 100% органических компонентов </h2>
+					<p>Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта. </p>
+				</div>
 				<div class="product-image">
-					<div class="vitamine"><img src="images/vitamine.png" alt="" srcset="" uk-parallax="scale: 0, 1, 1, 1, 1"/></div>
+					<div class="vitamine"><img src="images/vitamine.png" alt="" srcset="" uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)"/></div>
 					<div class="product-img"><img src="images/product.png" alt="" srcset=""/></div>
 				</div>
 				<div class="text-block">
-					<h2>0% антибиотиков 100% органических компонентов </h2>
-					<p>Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта.                 </p>
+					<div class="title">
+						<h2>0% антибиотиков 100% органических компонентов </h2>
+						<p>Препарат не оказывает нагрузки на организм и не вызывает аллергических реакций, поэтому может продаваться без рецепта.                 </p>
+					</div>
 					<ul>
 						<li>
 							<p><b>Экстракт клюквы: </b>оказывает бактерицидный эффект и разрушает клетки возбудителей  E.coli</p>
@@ -479,7 +491,11 @@
 		<section class="sc-7">
 			<div class="container">
 				<div class="row">
+<<<<<<< HEAD
 					<div class="doc-info-block" uk-parallax="y: 100, -300">
+=======
+					<div class="doc-info-block" uk-parallax="y: 100, -100; media: (min-width:720px)">
+>>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
 						<div class="doc-image"><img src="images/doc_image.jpeg" alt="" srcset=""/></div>
 						<div class="doc-name">
 							<p>Эрнест Гулий</p>
@@ -488,7 +504,7 @@
 							<p>Эксперт в области урологии, опыт работы с пациентами более 17 лет.</p>
 						</div>
 					</div>
-					<div class="text-block" uk-parallax="y: 50, -50">
+					<div class="text-block" uk-parallax="y: 50, -50; media: (min-width:720px)">
 						<h2>Безопасный аналог антибиотиков</h2>
 						<p>Раньше стандартом лечения цистита была антибиотикотерапия. Но для предотвращения рецидивов и полного излечения этого мало  бактерии привыкают к антибиотикам, возникает резистентность. Кроме того, антибиотик не снимает болевой симптом и мышечный спазм при затрудненном мочеиспускании.</p>
 						<p>Действие Cyto Forte направлено на быстрое снятие симптомов путем устранения первопричины. </p>
@@ -506,16 +522,14 @@
 		<section class="sc-8">
 			<div class="container">
 				<div class="row">
-					<div class="title">
+					<div class="title" uk-parallax="y: 150, -50; media: (min-width:720px)">
 						<h2>Они уже оценили эффект</h2>
 					</div>
-				</div>
-				<div class="row">
-					<div class="slider" uk-slider="uk-slider">
-						<div class="uk-slider-items">
+					<div class="slider" uk-slideshow="animation: fade" uk-parallax="y: 150, -150; media: (min-width:720px)">
+						<div class="uk-slideshow-items">
 							<div class="slider-item">
-								<div class="avatar"><img src="images/ava_1.jpg" alt="" srcset=""/></div>
-								<div class="user-card">
+								<div class="avatar uk-animation-slide-left"><img src="images/ava_1.jpg" alt="" srcset=""/></div>
+								<div class="user-card uk-animation-slide-right">
 									<div class="star-rate"><span></span><span></span><span></span><span></span><span></span></div>
 									<div class="user-name">
 										<h3>Ирина 36 лет</h3>
@@ -532,25 +546,21 @@
 								</div>
 							</div>
 							<div class="slider-item">
-								<div class="avatar"><img src="images/ava_1.jpg" alt="" srcset=""/></div>
-								<div class="user-card">
+								<div class="avatar uk-animation-slide-left"><img src="images/ava_2.jpg" alt="" srcset=""/></div>
+								<div class="user-card uk-animation-slide-right">
 									<div class="star-rate"><span></span><span></span><span></span><span></span><span></span></div>
 									<div class="user-name">
-										<h3>Ирина 36 лет</h3>
+										<h3>Ольга 46 лет</h3>
 									</div>
 									<div class="user-comment">
-										<p>
-											Со студенчества каждую зиму спала с грелкой. Ничего не помогало полностью вылечиться. 
-											Со временем даже у мужа начались проблемы. Доктор сказал, что я  заразила. 
-											Никакие спринцевания и антибиотики не помогали. Каждый анализ показывал наличие палочки E.coli. 
-											И мне и мужу помог Cyto Forte - оба пропили курс. Анализы подтвердили выздоровление. 
-											Рецидива не последовало даже спустя полгода.                                        
-										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum obcaecati ea inventore dolorum nemo quis ad non quos fugiat fugit. Distinctio ullam quae debitis, eaque architecto adipisci quia facilis et?</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="slider-navigate uk-slideshow-nav uk-dotnav"></div>
+						<div class="slider-navigate_layout">
+							<div class="slider-navigate uk-slideshow-nav"></div><a class="slider-next" uk-slideshow-item="next" href="#"></a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -563,19 +573,19 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true">  
+					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 300; repeat: true; media: (min-width:720px)">  
 						<div class="image"><img src="images/how_to_image_1.png" alt=""/></div>
 						<div class="text">
 							<p>Оставьте заявку на нашем сайте</p>
 						</div>
 					</div>
-					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true">  
+					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 400; repeat: true; media: (min-width:720px)">  
 						<div class="image"><img src="images/how_to_image_2.png" alt=""/></div>
 						<div class="text">
 							<p>Наш менеджер свяжется с вами </p>
 						</div>
 					</div>
-					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true">  
+					<div class="item" uk-scrollspy="cls: uk-animation-slide-bottom; delay: 500; repeat: true; media: (min-width:720px)">  
 						<div class="image"><img src="images/how_to_image_3.png" alt=""/></div>
 						<div class="text">
 							<p>Оплатите заказ во время получения </p>
@@ -586,8 +596,8 @@
 		</section>
 		<div class="sc_decor"></div>
 		<section class="sc-10">
-			<div class="cytoforte" uk-parallax="x: 0, 500"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
-			<div class="bubble" uk-parallax="x: 400, 0; y: 400, 0; scale: 2, 1">
+			<div class="cytoforte" uk-parallax="x: 0, 500; media: (min-width:720px)"> <span>cytforte</span><span>cytforte</span><span>cytforte</span><span>cytforte</span></div>
+			<div class="bubble" uk-parallax="x: 400, 0; y: 400, 0; scale: 2, 1; media: (min-width:720px)">
 				<div class="bubble_1"></div>
 				<div class="bubble_2"></div>
 				<div class="bubble_3"></div>
@@ -602,13 +612,13 @@
 				<div class="row">
 					<div class="product-image-container">
 						<div class="product-image"><img src="images/woman-image.png" alt="" srcset="images/woman-image.png"/></div>
-						<div class="berry" uk-parallax="scale: 0, 1, 1, 1"></div>
-						<div class="leaf_back" uk-parallax="scale: 0, 1, 1, 1, 1"></div>
-						<div class="leaf_front" uk-parallax="scale: 0, 1, 1"></div>
+						<div class="berry" uk-parallax="scale: 0, 1, 1, 1; media: (min-width:720px)"></div>
+						<div class="leaf_back" uk-parallax="scale: 0, 1, 1, 1, 1; media: (min-width:720px)"></div>
+						<div class="leaf_front" uk-parallax="scale: 0, 1, 1; media: (min-width:720px)"></div>
 					</div>
 					<div class="card">
 						<div class="form-title">
-							<h3>Успей купить Cyto Forte<br/><span>со скидкой 50% </span></h3>
+							<h3>Успей купить Cyto&nbsp;Forte<br/><span>со скидкой 50% </span></h3>
 							<div class="price">
 								<div class="old">
 									 Старая цена<span>3790 руб. </span></div>
