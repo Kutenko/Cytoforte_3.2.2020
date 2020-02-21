@@ -1,10 +1,6 @@
 // Fonts
 $ff_futura: "Futura New";
 $ff_futura_book: "Futura New Book";
-<<<<<<< HEAD
-=======
-
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
 $fw_bold: 700;
 $fw_book: 400;
 
@@ -217,11 +213,7 @@ body{
     top: -30px;
     height: 1px;
     width: 100%;
-<<<<<<< HEAD
-    z-index: 2;
-=======
     z-index: 9999;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
         &::after{
             content: ' ';
             display: block;
@@ -342,7 +334,9 @@ body{
         z-index: 1;
         position: relative;
         @media screen and (max-width:1080px) {
-            
+            margin-left: auto;
+            margin-right: auto;
+            float: none;
         }
     }
     .button{
@@ -370,6 +364,7 @@ body{
         @media screen and (max-width:1080px){
             max-width: 480px;
             width: 100%;
+            padding-top: 50px;
             padding-bottom: 50px;
             margin: 0 auto;
             z-index: 9;
@@ -381,6 +376,12 @@ body{
                 width: 100%;
                 text-align: center;
                 margin: 0;
+            }
+            h1{
+                @media screen and (max-width:720px) {
+                    font-size: 45px;
+                    line-height: 48px;
+                }
             }
         }
         .subtitle{
@@ -413,7 +414,7 @@ body{
             }
         }
         .subtitle__mobile{
-            margin: 50px 0 60px;
+            margin: 50px 0 10px;
             overflow: hidden;
             display: none;
             text-align: center;
@@ -423,9 +424,10 @@ body{
             span{
                 font-family: $ff_futura;
                 font-weight: $fw_bold;
+                font-size: 45px;
             }
             .left{
-                width: 325px;
+                max-width: 100%;
                 float: none;
                 margin: 0 auto;
                 color: $cinnabar;
@@ -736,6 +738,9 @@ body{
         max-width: 690px;
         margin: 0 auto 60px;
         text-align: center;
+        @media screen and (max-width:720px) {
+            margin-bottom: 10px;
+        }
     }
     .product-image-container{
         position: relative;
@@ -884,27 +889,23 @@ body{
                     font-family: $ff_futura;
                     line-height: 81px;
                     color: $dark_black;
+                    @media screen and (max-width:720px) {
+                        font-size: 45px;
+                        line-height: 45px;
+                    }
                 }
             }
             .button{
-<<<<<<< HEAD
-                margin: 60px auto 0;
-=======
                 margin: 60px auto;
                 @media screen and (max-width:580px) {
                     margin-bottom: 30px;
                 }
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
             }
         }
     }
 }
 .sc-4{
-<<<<<<< HEAD
-    padding: 180px 0;
-=======
     padding: 90px 0;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
     overflow: hidden;
     .title{
         text-align: center;
@@ -912,7 +913,7 @@ body{
         margin: 0 auto;
     }
     .subtitle{
-        width: 365px;
+        max-width: 365px;
         margin: 0 auto;
         text-align: center;
     }
@@ -998,7 +999,7 @@ body{
         width: 718px;
         height: 605px;
         margin: 90px auto 0;
-        padding: 0 0 0 35px;        
+        padding: 0 0 0 15px;        
         @media screen and (max-width:720px){
             max-width: 320px;
             height: 420px;
@@ -1200,7 +1201,7 @@ body{
             bottom: 250px;
             border-bottom: 1px solid rgba(104, 104, 104, 0.2);
             @media screen and (max-width:720px) {
-                left: -85px;
+                left: -105px;
                 bottom: 105px;
             }
         }
@@ -1209,13 +1210,13 @@ body{
             left: 0;
             border-top: 1px solid rgba(104, 104, 104, 0.2);
             @media screen and (max-width:720px) {
-                left: 0px;
+                left: -30px;
                 bottom: 19px;
             }            
         }
     }// table-container
     .text{
-        width: 420px;
+        max-width: 420px;
         margin: 0 auto;
         text-align: center;
         @media screen and (max-width:720px) {
@@ -1228,14 +1229,10 @@ body{
 }
 
 .sc-6{
-<<<<<<< HEAD
-    padding: 180px 0;
-=======
     padding: 90px 0;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
     overflow: hidden;
     .product-image{
-        width: 605px;
+        max-width: 605px;
         height: 665px;
         position: relative;
         float: left;
@@ -1250,7 +1247,7 @@ body{
             margin: 0 auto;
         }
         .vitamine{
-            width: 596px;
+            max-width: 596px;
             height: 537px;
             position: absolute;
             z-index: 1;
@@ -1301,7 +1298,7 @@ body{
         }
     }//end text-block
     .title__mobile{
-        width: 320px;
+        max-width: 320px;
         display: none;
         margin: 0 auto;
         text-align: center;
@@ -1323,12 +1320,7 @@ body{
         content: '';
         z-index: 0;
         width: 100%;
-<<<<<<< HEAD
-        height: 100%;
-        max-height: 830px;
-=======
         height: 830px;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
         position: absolute;
         top: 0;
         left: 0;
@@ -1434,6 +1426,18 @@ body{
         top: 50px;
         position: absolute;
         z-index: 1;
+        @media screen and (max-width:1080px) {
+            float: none;
+            position: relative;
+            top: 0;
+            left: 0;
+            max-width: 620px;
+            text-align: center;
+            margin: 0px auto 50px;
+        }
+        @media screen and (max-width:720px) {
+            max-width: 320px;
+        }
     }
     .slider{
         position: relative;
@@ -1442,19 +1446,27 @@ body{
         margin: 0 auto;
         overflow: hidden;
         .uk-slideshow-items{
-            overflow: visible;
+            overflow: hidden;
+            min-height: 670px;
         }
         .slider-item{
             overflow: visible;
-            // min-height: 850px !important;
+            min-height: 850px !important;
             .avatar{
                 width: 340px;
                 height: 350px;
                 overflow: hidden;
                 float: left;
+                @media screen and (max-width:1080px) {
+                    float: none;
+                    width: 100%;
+                    height: auto;
+                    max-width: 280px;
+                    max-height: 280px;
+                    margin: 0 auto;
+                }
                 img{
                     width: auto;
-                    height: 100%;
                 }
             }
             .user-card{
@@ -1467,6 +1479,15 @@ body{
                 border-radius: 25px;
                 float: right;
                 box-shadow: 2px 2px 15px rgba(100,100,100,0.5);
+                @media screen and (max-width:1080px) {
+                    float: none;
+                    top: 0;
+                    left: 0;
+                    max-width: 320px;
+                    padding: 30px;
+                    width: 100%;
+                    margin: 0 auto;
+                }
                 .star-rate{
                     span{
                         width: 10px;
@@ -1701,6 +1722,12 @@ body{
             background-position: center;
             background-size: contain;
             z-index: 3;
+            @media screen and (max-width:720px) {
+                width: 480px;
+                height: 600px;
+                left: -90px;
+                top: -160px;                
+            }            
         }
         .leaf_back{
             width: 853px;
@@ -1713,6 +1740,12 @@ body{
             background-position: center;
             background-size: contain;
             z-index: 2;
+            @media screen and (max-width:720px) {
+                width: 480px;
+                height: 600px;
+                left: -90px;
+                top: -160px;                
+            }      
         }
         .leaf_front{
             width: 703px;
@@ -1725,6 +1758,12 @@ body{
             background-position: center;
             background-size: contain;
             z-index: 1;
+            @media screen and (max-width:720px) {
+                width: 400px;
+                height: 600px;
+                top: -160px;
+                left: -60px;
+            }   
         }
     }  
     .card{
@@ -1741,6 +1780,10 @@ body{
             float: none;
             display: block;
         }
+        @media screen and (max-width:720px) {
+            width: 100%;
+            padding: 15px;
+        }        
         .form-title{
             text-align: center;
             h3{
@@ -1774,6 +1817,10 @@ body{
                 font-weight: $fw_bold;
                 line-height: 81px;
                 color: $dark_black;
+                @media screen and (max-width:720px) {
+                    font-size: 45px;
+                    line-height: 45px;
+                }
             }
         }
         .form-field{
@@ -1795,6 +1842,9 @@ body{
         }
         .button{
             margin: 60px auto 0;
+            @media screen and (max-width:720px) {
+                margin-top: 15px;
+            }
         }
     }
 }

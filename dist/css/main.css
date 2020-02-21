@@ -162,11 +162,7 @@ body {
   top: -30px;
   height: 1px;
   width: 100%;
-<<<<<<< HEAD
-  z-index: 2; }
-=======
   z-index: 9999; }
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
   .sc_decor::after {
     content: ' ';
     display: block;
@@ -272,6 +268,11 @@ body {
     margin: 90px 0 0 0;
     z-index: 1;
     position: relative; }
+    @media screen and (max-width: 1080px) {
+      .sc-1 .logo {
+        margin-left: auto;
+        margin-right: auto;
+        float: none; } }
   @media screen and (max-width: 1080px) {
     .sc-1 .button {
       display: none; } }
@@ -295,6 +296,7 @@ body {
       .sc-1 .content-block {
         max-width: 480px;
         width: 100%;
+        padding-top: 50px;
         padding-bottom: 50px;
         margin: 0 auto;
         z-index: 9; } }
@@ -305,6 +307,10 @@ body {
         width: 100%;
         text-align: center;
         margin: 0; } }
+    @media screen and (max-width: 720px) {
+      .sc-1 .title h1 {
+        font-size: 45px;
+        line-height: 48px; } }
   .sc-1 .subtitle {
     margin: 0 0 60px;
     overflow: hidden; }
@@ -331,7 +337,7 @@ body {
           clear: both;
           padding: 0 0 0 10px; } }
   .sc-1 .subtitle__mobile {
-    margin: 50px 0 60px;
+    margin: 50px 0 10px;
     overflow: hidden;
     display: none;
     text-align: center; }
@@ -340,9 +346,10 @@ body {
         display: block; } }
     .sc-1 .subtitle__mobile span {
       font-family: "Futura New";
-      font-weight: 700; }
+      font-weight: 700;
+      font-size: 45px; }
     .sc-1 .subtitle__mobile .left {
-      width: 325px;
+      max-width: 100%;
       float: none;
       margin: 0 auto;
       color: #e23c3c;
@@ -616,6 +623,9 @@ body {
     max-width: 690px;
     margin: 0 auto 60px;
     text-align: center; }
+    @media screen and (max-width: 720px) {
+      .sc-3 .title {
+        margin-bottom: 10px; } }
   .sc-3 .product-image-container {
     position: relative;
     width: 490px;
@@ -751,13 +761,11 @@ body {
           font-family: "Futura New";
           line-height: 81px;
           color: #000000; }
+          @media screen and (max-width: 720px) {
+            .sc-3 .product-price .card .price .new {
+              font-size: 45px;
+              line-height: 45px; } }
       .sc-3 .product-price .card .button {
-<<<<<<< HEAD
-        margin: 60px auto 0; }
-
-.sc-4 {
-  padding: 180px 0;
-=======
         margin: 60px auto; }
         @media screen and (max-width: 580px) {
           .sc-3 .product-price .card .button {
@@ -765,14 +773,13 @@ body {
 
 .sc-4 {
   padding: 90px 0;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
   overflow: hidden; }
   .sc-4 .title {
     text-align: center;
     max-width: 685px;
     margin: 0 auto; }
   .sc-4 .subtitle {
-    width: 365px;
+    max-width: 365px;
     margin: 0 auto;
     text-align: center; }
   .sc-4 .container-item {
@@ -848,7 +855,7 @@ body {
     width: 718px;
     height: 605px;
     margin: 90px auto 0;
-    padding: 0 0 0 35px; }
+    padding: 0 0 0 15px; }
     @media screen and (max-width: 720px) {
       .sc-5 .table-container {
         max-width: 320px;
@@ -1023,7 +1030,7 @@ body {
       border-bottom: 1px solid rgba(104, 104, 104, 0.2); }
       @media screen and (max-width: 720px) {
         .sc-5 .table-container .label-1 {
-          left: -85px;
+          left: -105px;
           bottom: 105px; } }
     .sc-5 .table-container .label-2 {
       bottom: 110px;
@@ -1031,10 +1038,10 @@ body {
       border-top: 1px solid rgba(104, 104, 104, 0.2); }
       @media screen and (max-width: 720px) {
         .sc-5 .table-container .label-2 {
-          left: 0px;
+          left: -30px;
           bottom: 19px; } }
   .sc-5 .text {
-    width: 420px;
+    max-width: 420px;
     margin: 0 auto;
     text-align: center; }
     @media screen and (max-width: 720px) {
@@ -1044,14 +1051,10 @@ body {
       margin: 0 0 0 0; }
 
 .sc-6 {
-<<<<<<< HEAD
-  padding: 180px 0;
-=======
   padding: 90px 0;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
   overflow: hidden; }
   .sc-6 .product-image {
-    width: 605px;
+    max-width: 605px;
     height: 665px;
     position: relative;
     float: left; }
@@ -1066,7 +1069,7 @@ body {
         float: none;
         margin: 0 auto; } }
     .sc-6 .product-image .vitamine {
-      width: 596px;
+      max-width: 596px;
       height: 537px;
       position: absolute;
       z-index: 1;
@@ -1108,7 +1111,7 @@ body {
       list-style: none;
       margin: 60px 0 0 -30px; }
   .sc-6 .title__mobile {
-    width: 320px;
+    max-width: 320px;
     display: none;
     margin: 0 auto;
     text-align: center; }
@@ -1128,12 +1131,7 @@ body {
     content: '';
     z-index: 0;
     width: 100%;
-<<<<<<< HEAD
-    height: 100%;
-    max-height: 830px;
-=======
     height: 830px;
->>>>>>> 9244d337fda1e24716d687c35f565976295dfde7
     position: absolute;
     top: 0;
     left: 0;
@@ -1228,6 +1226,18 @@ body {
     top: 50px;
     position: absolute;
     z-index: 1; }
+    @media screen and (max-width: 1080px) {
+      .sc-8 .title {
+        float: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 620px;
+        text-align: center;
+        margin: 0px auto 50px; } }
+    @media screen and (max-width: 720px) {
+      .sc-8 .title {
+        max-width: 320px; } }
   .sc-8 .slider {
     position: relative;
     z-index: 2;
@@ -1235,17 +1245,26 @@ body {
     margin: 0 auto;
     overflow: hidden; }
     .sc-8 .slider .uk-slideshow-items {
-      overflow: visible; }
+      overflow: hidden;
+      min-height: 670px; }
     .sc-8 .slider .slider-item {
-      overflow: visible; }
+      overflow: visible;
+      min-height: 850px !important; }
       .sc-8 .slider .slider-item .avatar {
         width: 340px;
         height: 350px;
         overflow: hidden;
         float: left; }
+        @media screen and (max-width: 1080px) {
+          .sc-8 .slider .slider-item .avatar {
+            float: none;
+            width: 100%;
+            height: auto;
+            max-width: 280px;
+            max-height: 280px;
+            margin: 0 auto; } }
         .sc-8 .slider .slider-item .avatar img {
-          width: auto;
-          height: 100%; }
+          width: auto; }
       .sc-8 .slider .slider-item .user-card {
         position: relative;
         width: 820px;
@@ -1256,6 +1275,15 @@ body {
         border-radius: 25px;
         float: right;
         box-shadow: 2px 2px 15px rgba(100, 100, 100, 0.5); }
+        @media screen and (max-width: 1080px) {
+          .sc-8 .slider .slider-item .user-card {
+            float: none;
+            top: 0;
+            left: 0;
+            max-width: 320px;
+            padding: 30px;
+            width: 100%;
+            margin: 0 auto; } }
         .sc-8 .slider .slider-item .user-card .star-rate span {
           width: 10px;
           height: 10px;
@@ -1455,6 +1483,12 @@ body {
       background-position: center;
       background-size: contain;
       z-index: 3; }
+      @media screen and (max-width: 720px) {
+        .sc-10 .product-image-container .berry {
+          width: 480px;
+          height: 600px;
+          left: -90px;
+          top: -160px; } }
     .sc-10 .product-image-container .leaf_back {
       width: 853px;
       height: 817px;
@@ -1466,6 +1500,12 @@ body {
       background-position: center;
       background-size: contain;
       z-index: 2; }
+      @media screen and (max-width: 720px) {
+        .sc-10 .product-image-container .leaf_back {
+          width: 480px;
+          height: 600px;
+          left: -90px;
+          top: -160px; } }
     .sc-10 .product-image-container .leaf_front {
       width: 703px;
       height: 564px;
@@ -1477,6 +1517,12 @@ body {
       background-position: center;
       background-size: contain;
       z-index: 1; }
+      @media screen and (max-width: 720px) {
+        .sc-10 .product-image-container .leaf_front {
+          width: 400px;
+          height: 600px;
+          top: -160px;
+          left: -60px; } }
   .sc-10 .card {
     position: relative;
     display: inline-block;
@@ -1491,6 +1537,10 @@ body {
         margin: 0 auto;
         float: none;
         display: block; } }
+    @media screen and (max-width: 720px) {
+      .sc-10 .card {
+        width: 100%;
+        padding: 15px; } }
     .sc-10 .card .form-title {
       text-align: center; }
       .sc-10 .card .form-title h3 {
@@ -1519,6 +1569,10 @@ body {
         font-weight: 700;
         line-height: 81px;
         color: #000000; }
+        @media screen and (max-width: 720px) {
+          .sc-10 .card .price .new {
+            font-size: 45px;
+            line-height: 45px; } }
     .sc-10 .card .form-field input,
     .sc-10 .card .form-field select {
       background: #ffffff;
@@ -1534,6 +1588,9 @@ body {
       text-align-last: center; }
     .sc-10 .card .button {
       margin: 60px auto 0; }
+      @media screen and (max-width: 720px) {
+        .sc-10 .card .button {
+          margin-top: 15px; } }
 
 @-webkit-keyframes scale-in-center {
   0% {
